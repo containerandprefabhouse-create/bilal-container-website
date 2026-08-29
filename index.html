@@ -1,1241 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="google-site-verification" content="mZL0BKDx_j44jRtgHN3fbo0H54jsElmaPX9iBmKv8KY" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Bilal Container & Prefab Cabin House</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial,sans-serif;
-    background:url("background.jpg");
-    color:#222;
-}
-
-/* HEADER */
-header{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:25px 15px;
-}
-
-header h1{
-    font-size:28px;
-    margin-bottom:8px;
-}
-
-header p{
-    color:#d1d5db;
-}
-
-/* NAVIGATION */
-nav{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:#f59e0b;
-    padding:12px 5px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    margin:5px 8px;
-    display:inline-block;
-    font-size:14px;
-}
-
-/* HERO */
-.hero{
-    background:
-    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.72)),
-    url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80");
-
-    background-size:cover;
-    background-position:center;
-
-    color:white;
-    text-align:center;
-    padding:90px 20px;
-}
-
-.hero h2{
-    font-size:38px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.7;
-}
-
-.hero-buttons{
-    margin-top:25px;
-}
-
-.button{
-    display:inline-block;
-    padding:14px 22px;
-    margin:5px;
-    border-radius:8px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.call{
-    background:#f59e0b;
-    color:white;
-}
-
-.whatsapp{
-    background:#22c55e;
-    color:white;
-}
-
-/* SECTION */
-.section{
-    padding:55px 15px;
-}
-
-.section-title{
-    text-align:center;
-    font-size:30px;
-    margin-bottom:10px;
-}
-
-.section-subtitle{
-    text-align:center;
-    color:#666;
-    margin-bottom:35px;
-}
-
-/* PRODUCTS */
-.products{
-    max-width:1200px;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(270px,1fr));
-
-    gap:22px;
-}
-
-/* PRODUCT */
-.product{
-    background:white;
-    border-radius:14px;
-    overflow:hidden;
-    box-shadow:0 5px 18px rgba(0,0,0,.12);
-    transition:.2s;
-}
-
-.product:hover{
-    transform:translateY(-4px);
-}
-
-/* PHOTO */
-.product-photo{
-    height:210px;
-    background:#e5e7eb;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    color:#777;
-    font-size:18px;
-    text-align:center;
-}
-
-.product-photo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-
-/* INFO */
-.product-info{
-    padding:20px;
-}
-
-.product-category{
-    color:#f59e0b;
-    font-size:13px;
-    font-weight:bold;
-    text-transform:uppercase;
-}
-
-.product-info h3{
-    font-size:21px;
-    margin:8px 0 15px;
-}
-
-.details{
-    line-height:1.8;
-    color:#555;
-}
-
-.price{
-    color:#e88900;
-    font-size:22px;
-    font-weight:bold;
-    margin:15px 0;
-}
-
-.order-button{
-    display:block;
-    background:#22c55e;
-    color:white;
-    text-align:center;
-    padding:12px;
-    border-radius:7px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-/* ABOUT */
-.about{
-    background:#111827;
-    color:white;
-    text-align:center;
-}
-
-.about p{
-    max-width:800px;
-    margin:12px auto;
-    line-height:1.8;
-    color:#d1d5db;
-}
-
-/* CONTACT */
-.contact{
-    background:white;
-    text-align:center;
-}
-
-.contact-number{
-    font-size:25px;
-    font-weight:bold;
-    margin:20px 0;
-}
-
-/* FOOTER */
-footer{
-    background:#080b10;
-    color:white;
-    text-align:center;
-    padding:28px 15px;
-    line-height:1.8;
-}
-
-footer p{
-    color:#bbb;
-}
-
-/* FLOATING WHATSAPP */
-.whatsapp-float{
-    position:fixed;
-    right:18px;
-    bottom:18px;
-
-    width:60px;
-    height:60px;
-
-    background:#22c55e;
-    color:white;
-
-    border-radius:50%;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-decoration:none;
-
-    font-size:30px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.3);
-
-    z-index:9999;
-}
-
-/* MOBILE */
-@media(max-width:600px){
-
-    header h1{
-        font-size:21px;
-    }
-
-    .hero{
-        padding:70px 15px;
-    }
-
-    .hero h2{
-        font-size:27px;
-    }
-
-    .section-title{
-        font-size:26px;
-    }
-
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
+<div class="top">
+🇵🇰 All Pakistan Delivery | 📞 03020534276
+</div>
 
 <header>
+    <div class="logo">
+        Bilal <span>Container</span>
+    </div>
+    <p>Container & Prefab Cabin House</p>
 
-<h1>Bilal Container & Prefab Cabin House</h1>
-
-<p>
-Container • Furnished Container Room • Guard Cabin • Bathroom • Room • House
-</p>
-
+    <a href="tel:03020534276" class="btn call">📞 Call Now</a>
+    <a href="https://wa.me/923020534276" class="btn whatsapp">
+        💬 WhatsApp
+    </a>
 </header>
 
-
-<!-- NAVIGATION -->
-
 <nav>
-
-<a href="#home">Home</a>
-<a href="#containers">Containers</a>
-<a href="#furnished">Furnished Rooms</a>
-<a href="#guard">Guard Cabins</a>
-<a href="#bathrooms">Bathrooms</a>
-<a href="#rooms">Prefab Rooms</a>
-<a href="#houses">Prefab Houses</a>
-<a href="#contact">Contact</a>
-
+    <a href="index.html">Home</a>
+    <a href="containers.html">Containers</a>
+    <a href="furnished.html">Furnished Rooms</a>
+    <a href="cabins.html">Guard Cabins</a>
+    <a href="bathrooms.html">Bathrooms</a>
+    <a href="rooms.html">Prefab Rooms</a>
+    <a href="houses.html">Prefab Houses</a>
+    <a href="contact.html">Contact</a>
 </nav>
 
 
-<!-- HOME -->
+<section class="hero">
 
-<section class="hero" id="home">
+    <div>
 
-<h2>Bilal Container & Prefab Cabin House</h2>
+        <h1>
+            Bilal <span>Container</span>
+        </h1>
 
-<p>
-Quality containers, furnished container rooms,
-security guard cabins, prefab bathrooms,
-prefab rooms and prefab houses.
-</p>
+        <p>
+            Quality Containers, Furnished Rooms,
+            Security Guard Cabins, Prefab Bathrooms,
+            Prefab Rooms & Prefab Houses.
+        </p>
 
-<div class="hero-buttons">
+        <br>
 
-<a class="button call"
-href="tel:03020534276">
-📞 Call Now
-</a>
+        <a href="containers.html" class="btn call">
+            📦 View Containers
+        </a>
 
-<a class="button whatsapp"
-href="https://wa.me/923020534276"
-target="_blank">
-💬 WhatsApp
-</a>
+        <a href="https://wa.me/923020534276" class="btn whatsapp">
+            💬 WhatsApp Now
+        </a>
 
-</div>
+    </div>
 
 </section>
 
 
-<!-- ================================================= -->
-<!-- CONTAINERS -->
-<!-- ================================================= -->
+<section class="section">
 
-<section class="section" id="containers">
+    <div class="title">
+        <h2>Our Products</h2>
+        <p>Choose your required product</p>
+    </div>
 
-<h2 class="section-title">
-📦 Containers
-</h2>
 
-<p class="section-subtitle">
-Container sizes and prices
-</p>
+    <div class="grid">
 
-<div class="products">
 
+        <div class="card">
 
-<div class="product">
+            <div class="card-img">
+                <img src="images/container-cover.jpg"
+                alt="Containers">
+            </div>
 
-<div class="product-photo">
-📷 Your 8×20 Container Photo
-</div>
+            <div class="card-body">
 
-<div class="product-info">
+                <h3>📦 Empty Containers</h3>
 
-<span class="product-category">
-Container
-</span>
+                <p>
+                    8×20, 10×20, 10×30,
+                    8×30, 8×40 and 10×40.
+                </p>
 
-<h3>Container</h3>
+                <a href="containers.html"
+                class="btn call">
+                    View Containers
+                </a>
 
-<div class="details">
-📏 Size: 8 × 20
-</div>
+            </div>
 
-<div class="price">
-Rs. 380,000
-</div>
+        </div>
 
-<a class="order-button"
-href="https://wa.me/923020534276?text=8x20%20Container"
-target="_blank">
-WhatsApp For Details
-</a>
 
-</div>
-</div>
+        <div class="card">
 
+            <div class="card-img">
+                <img src="images/furnished-cover.jpg"
+                alt="Furnished Container Rooms">
+            </div>
 
-<div class="product">
+            <div class="card-body">
 
-<div class="product-photo">
-📷 Your 10×20 Container Photo
-</div>
+                <h3>🏠 Furnished Container Rooms</h3>
 
-<div class="product-info">
+                <p>
+                    Ready-made furnished container
+                    rooms in different sizes.
+                </p>
 
-<span class="product-category">
-Container
-</span>
+                <a href="furnished.html"
+                class="btn call">
+                    View Furnished
+                </a>
 
-<h3>Container</h3>
+            </div>
 
-<div class="details">
-📏 Size: 10 × 20
-</div>
+        </div>
 
-<div class="price">
-Rs. 480,000
-</div>
 
-<a class="order-button"
-href="https://wa.me/923020534276?text=10x20%20Container"
-target="_blank">
-WhatsApp For Details
-</a>
+        <div class="card">
 
-</div>
-</div>
+            <div class="card-img">
+                <img src="images/cabin-cover.jpg"
+                alt="Security Guard Cabins">
+            </div>
 
+            <div class="card-body">
 
-<div class="product">
+                <h3>🛡️ Security Guard Cabins</h3>
 
-<div class="product-photo">
-📷 Your 10×30 Container Photo
-</div>
+                <p>
+                    Strong prefab security cabins
+                    in different sizes.
+                </p>
 
-<div class="product-info">
+                <a href="cabins.html"
+                class="btn call">
+                    View Cabins
+                </a>
 
-<span class="product-category">
-Container
-</span>
+            </div>
 
-<h3>Container</h3>
+        </div>
 
-<div class="details">
-📏 Size: 10 × 30
-</div>
 
-<div class="price">
-Rs. 600,000
-</div>
+        <div class="card">
 
-<a class="order-button"
-href="https://wa.me/923020534276?text=10x30%20Container"
-target="_blank">
-WhatsApp For Details
-</a>
+            <div class="card-img">
+                <img src="images/bathroom-cover.jpg"
+                alt="Prefab Bathrooms">
+            </div>
 
-</div>
-</div>
+            <div class="card-body">
 
+                <h3>🚿 Prefab Bathrooms</h3>
 
-<div class="product">
+                <p>
+                    Modern ready-made prefab
+                    bathrooms in different sizes.
+                </p>
 
-<div class="product-photo">
-📷 Your 8×30 Container Photo
-</div>
+                <a href="bathrooms.html"
+                class="btn call">
+                    View Bathrooms
+                </a>
 
-<div class="product-info">
+            </div>
 
-<span class="product-category">
-Container
-</span>
+        </div>
 
-<h3>Container</h3>
 
-<div class="details">
-📏 Size: 8 × 30
-</div>
+        <div class="card">
 
-<div class="price">
-Rs. 550,000
-</div>
+            <div class="card-img">
+                <img src="images/room-cover.jpg"
+                alt="Prefab Rooms">
+            </div>
 
-<a class="order-button"
-href="https://wa.me/923020534276?text=8x30%20Container"
-target="_blank">
-WhatsApp For Details
-</a>
+            <div class="card-body">
 
-</div>
-</div>
+                <h3>🛏️ Prefab Rooms</h3>
 
+                <p>
+                    Modern rooms for home,
+                    office and site use.
+                </p>
 
-<div class="product">
+                <a href="rooms.html"
+                class="btn call">
+                    View Rooms
+                </a>
 
-<div class="product-photo">
-📷 Your 8×40 Container Photo
-</div>
+            </div>
 
-<div class="product-info">
+        </div>
 
-<span class="product-category">
-Container
-</span>
 
-<h3>Container</h3>
+        <div class="card">
 
-<div class="details">
-📏 Size: 8 × 40
-</div>
+            <div class="card-img">
+                <img src="images/house-cover.jpg"
+                alt="Prefab Houses">
+            </div>
 
-<div class="price">
-Rs. 700,000
-</div>
+            <div class="card-body">
 
-<a class="order-button"
-href="https://wa.me/923020534276?text=8x40%20Container"
-target="_blank">
-WhatsApp For Details
-</a>
+                <h3>🏡 Prefab Houses</h3>
 
-</div>
-</div>
+                <p>
+                    Custom prefab houses according
+                    to your size and requirements.
+                </p>
 
+                <a href="houses.html"
+                class="btn call">
+                    View Houses
+                </a>
 
-<div class="product">
+            </div>
 
-<div class="product-photo">
-📷 Your 10×40 Container Photo
-</div>
+        </div>
 
-<div class="product-info">
 
-<span class="product-category">
-Container
-</span>
-
-<h3>Container</h3>
-
-<div class="details">
-📏 Size: 10 × 40
-</div>
-
-<div class="price">
-Rs. 950,000
-</div>
-
-<a class="order-button"
-href="https://wa.me/923020534276?text=10x40%20Container"
-target="_blank">
-WhatsApp For Details
-</a>
-
-</div>
-</div>
-
-
-</div>
-</section>
-
-
-<!-- ================================================= -->
-<!-- FURNISHED CONTAINER ROOMS -->
-<!-- ================================================= -->
-
-<section class="section" id="furnished">
-
-<h2 class="section-title">
-🏠 Furnished Container Rooms
-</h2>
-
-<p class="section-subtitle">
-Complete furnished container rooms
-</p>
-
-<div class="products">
-
-
-<div class="product">
-
-<div class="product-photo">
-📷 Your 8×20 Furnished Room Photo
-</div>
-
-<div class="product-info">
-
-<span class="product-category">
-Furnished Container Room
-</span>
-
-<h3>Furnished Container Room</h3>
-
-<div class="details">
-📏 Size: 8 × 20
-</div>
-
-<div class="price">
-Rs. 600,000
-</div>
-
-<a class="order-button"
-href="https://wa.me/923020534276?text=8x20%20Furnished%20Container%20Room"
-target="_blank">
-WhatsApp For Details
-</a>
-
-</div>
-</div>
-
-
-<div class="product">
-
-<div class="product-photo">
-📷 Your 10×20 Furnished Room Photo
-</div>
-
-<div class="product-info">
-
-<span class="product-category">
-Furnished Container Room
-</span>
-
-<h3>Furnished Container Room</h3>
-
-<div class="details">
-📏 Size: 10 × 20
-</div>
-
-<div class="price">
-Rs. 720,000
-</div>
-
-<a class="order-button"
-href="https://wa.me/923020534276?text=10x20%20Furnished%20Container%20Room"
-target="_blank">
-WhatsApp For Details
-</a>
-
-</div>
-</div>
-
-
-<div class="product">
-
-<div class="product-photo">
-📷 Your 10×30 Furnished Room Photo
-</div>
-
-<div class="product-info">
-
-<span class="product-category">
-Furnished Container Room
-</span>
-
-<h3>Furnished Container Room</h3>
-
-<div class="details">
-📏 Size: 10 × 30
-</div>
-
-<div class="price">
-Rs. 1,100,000
-</div>
-
-<a class="order-button"
-href="https://wa.me/923020534276?text=10x30%20Furnished%20Container%20Room"
-target="_blank">
-WhatsApp For Details
-</a>
-
-</div>
-</div>
-
-
-<div class="product">
-
-<div class="product-photo">
-📷 Your 8×30 Furnished Room Photo
-</div>
-
-<div class="product-info">
-
-<span class="product-category">
-Furnished Container Room
-</span>
-
-<h3>Furnished Container Room</h3>
-
-<div class="details">
-📏 Size: 8 × 30
-</div>
-
-<div class="price">
-Rs. 1,020,000
-</div>
-
-<a class="order-button"
-href="https://wa.me/923020534276?text=8x30%20Furnished%20Container%20Room"
-target="_blank">
-WhatsApp For Details
-</a>
-
-</div>
-</div>
-
-
-<div class="product">
-
-<div class="product-photo">
-📷 Your 8×40 Furnished Room Photo
-</div>
-
-<div class="product-info">
-
-<span class="product-category">
-Furnished Container Room
-</span>
-
-<h3>Furnished Container Room</h3>
-
-<div class="details">
-📏 Size: 8 × 40
-</div>
-
-<div class="price">
-Rs. 1,300,000
-</div>
-
-<a class="order-button"
-href="https://wa.me/923020534276?text=8x40%20Furnished%20Container%20Room"
-target="_blank">
-WhatsApp For Details
-</a>
-
-</div>
-</div>
-
-
-<div class="product">
-
-<div class="product-photo">
-📷 Your 10×40 Furnished Room Photo
-</div>
-
-<div class="product-info">
-
-<span class="product-category">
-Furnished Container Room
-</span>
-
-<h3>Furnished Container Room</h3>
-
-<div class="details">
-📏 Size: 10 × 40
-</div>
-
-<div class="price">
-Rs. 1,550,000
-</div>
-
-<a class="order-button"
-href="https://wa.me/923020534276?text=10x40%20Furnished%20Container%20Room"
-target="_blank">
-WhatsApp For Details
-</a>
-
-</div>
-</div>
-
-
-</div>
-</section>
-
-
-<!-- ================================================= -->
-<!-- SECURITY GUARD CABINS -->
-<!-- ================================================= -->
-
-<section class="section" id="guard">
-
-<h2 class="section-title">
-🛡️ Prefab Security Guard Cabins
-</h2>
-
-<p class="section-subtitle">
-Different sizes available
-</p>
-
-<div class="products">
-
-
-<div class="product">
-<div class="product-photo">📷 Your 4×4 Cabin Photo</div>
-<div class="product-info">
-<span class="product-category">Guard Cabin</span>
-<h3>Prefab Security Guard Cabin</h3>
-<div class="details">📏 Size: 4 × 4</div>
-<div class="price">Rs. 135,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=4x4%20Guard%20Cabin" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 4×6 Cabin Photo</div>
-<div class="product-info">
-<span class="product-category">Guard Cabin</span>
-<h3>Prefab Security Guard Cabin</h3>
-<div class="details">📏 Size: 4 × 6</div>
-<div class="price">Rs. 170,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=4x6%20Guard%20Cabin" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 5×5 Cabin Photo</div>
-<div class="product-info">
-<span class="product-category">Guard Cabin</span>
-<h3>Prefab Security Guard Cabin</h3>
-<div class="details">📏 Size: 5 × 5</div>
-<div class="price">Rs. 170,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=5x5%20Guard%20Cabin" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 6×6 Cabin Photo</div>
-<div class="product-info">
-<span class="product-category">Guard Cabin</span>
-<h3>Prefab Security Guard Cabin</h3>
-<div class="details">📏 Size: 6 × 6</div>
-<div class="price">Rs. 230,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=6x6%20Guard%20Cabin" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 6×8 Cabin Photo</div>
-<div class="product-info">
-<span class="product-category">Guard Cabin</span>
-<h3>Prefab Security Guard Cabin</h3>
-<div class="details">📏 Size: 6 × 8</div>
-<div class="price">Rs. 270,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=6x8%20Guard%20Cabin" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 8×8 Cabin Photo</div>
-<div class="product-info">
-<span class="product-category">Guard Cabin</span>
-<h3>Prefab Security Guard Cabin</h3>
-<div class="details">📏 Size: 8 × 8</div>
-<div class="price">Rs. 325,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=8x8%20Guard%20Cabin" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 8×10 Cabin Photo</div>
-<div class="product-info">
-<span class="product-category">Guard Cabin</span>
-<h3>Prefab Security Guard Cabin</h3>
-<div class="details">📏 Size: 8 × 10</div>
-<div class="price">Rs. 360,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=8x10%20Guard%20Cabin" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 10×10 Cabin Photo</div>
-<div class="product-info">
-<span class="product-category">Guard Cabin</span>
-<h3>Prefab Security Guard Cabin</h3>
-<div class="details">📏 Size: 10 × 10</div>
-<div class="price">Rs. 400,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=10x10%20Guard%20Cabin" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-</div>
-</section>
-
-
-<!-- ================================================= -->
-<!-- PREFAB BATHROOMS -->
-<!-- ================================================= -->
-
-<section class="section" id="bathrooms">
-
-<h2 class="section-title">
-🚿 Prefab Bathrooms
-</h2>
-
-<p class="section-subtitle">
-Prefab bathroom sizes and prices
-</p>
-
-<div class="products">
-
-
-<div class="product">
-<div class="product-photo">📷 Your 4×4 Bathroom Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Bathroom</span>
-<h3>Prefab Bathroom</h3>
-<div class="details">📏 Size: 4 × 4</div>
-<div class="price">Rs. 160,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=4x4%20Prefab%20Bathroom" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 4×6 Bathroom Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Bathroom</span>
-<h3>Prefab Bathroom</h3>
-<div class="details">📏 Size: 4 × 6</div>
-<div class="price">Rs. 190,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=4x6%20Prefab%20Bathroom" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 6×6 Bathroom Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Bathroom</span>
-<h3>Prefab Bathroom</h3>
-<div class="details">📏 Size: 6 × 6</div>
-<div class="price">Rs. 250,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=6x6%20Prefab%20Bathroom" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 6×8 Bathroom Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Bathroom</span>
-<h3>Prefab Bathroom</h3>
-<div class="details">📏 Size: 6 × 8</div>
-<div class="price">Rs. 320,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=6x8%20Prefab%20Bathroom" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-</div>
-</section>
-
-
-<!-- ================================================= -->
-<!-- PREFAB ROOMS -->
-<!-- ================================================= -->
-
-<section class="section" id="rooms">
-
-<h2 class="section-title">
-🛏️ Prefab Rooms
-</h2>
-
-<p class="section-subtitle">
-Modern prefab rooms
-</p>
-
-<div class="products">
-
-
-<div class="product">
-<div class="product-photo">📷 Your 8×8 Room Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Room</span>
-<h3>Prefab Room</h3>
-<div class="details">📏 Size: 8 × 8</div>
-<div class="price">Rs. 320,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=8x8%20Prefab%20Room" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 8×10 Room Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Room</span>
-<h3>Prefab Room</h3>
-<div class="details">📏 Size: 8 × 10</div>
-<div class="price">Rs. 380,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=8x10%20Prefab%20Room" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 10×10 Room Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Room</span>
-<h3>Prefab Room</h3>
-<div class="details">📏 Size: 10 × 10</div>
-<div class="price">Rs. 420,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=10x10%20Prefab%20Room" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 10×12 Room Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Room</span>
-<h3>Prefab Room</h3>
-<div class="details">📏 Size: 10 × 12</div>
-<div class="price">Rs. 440,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=10x12%20Prefab%20Room" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 12×12 Room Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Room</span>
-<h3>Prefab Room</h3>
-<div class="details">📏 Size: 12 × 12</div>
-<div class="price">Rs. 460,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=12x12%20Prefab%20Room" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 12×14 Room Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Room</span>
-<h3>Prefab Room</h3>
-<div class="details">📏 Size: 12 × 14</div>
-<div class="price">Rs. 480,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=12x14%20Prefab%20Room" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 14×14 Room Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Room</span>
-<h3>Prefab Room</h3>
-<div class="details">📏 Size: 14 × 14</div>
-<div class="price">Rs. 500,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=14x14%20Prefab%20Room" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-<div class="product">
-<div class="product-photo">📷 Your 14×16 Room Photo</div>
-<div class="product-info">
-<span class="product-category">Prefab Room</span>
-<h3>Prefab Room</h3>
-<div class="details">📏 Size: 14 × 16</div>
-<div class="price">Rs. 520,000</div>
-<a class="order-button" href="https://wa.me/923020534276?text=14x16%20Prefab%20Room" target="_blank">WhatsApp For Details</a>
-</div>
-</div>
-
-
-</div>
-</section>
-
-
-<!-- ================================================= -->
-<!-- PREFAB HOUSES -->
-<!-- ================================================= -->
-
-<section class="section" id="houses">
-
-<h2 class="section-title">
-🏡 Prefab Houses
-</h2>
-
-<p class="section-subtitle">
-Custom prefab house designs
-</p>
-
-<div class="products">
-
-<div class="product">
-
-<div class="product-photo">
-📷 Your Prefab House Photo
-</div>
-
-<div class="product-info">
-
-<span class="product-category">
-Prefab House
-</span>
-
-<h3>
-Custom Prefab House
-</h3>
-
-<div class="details">
-📏 Custom Size & Design
-</div>
-
-<div class="price">
-Price: Contact Us
-</div>
-
-<a class="order-button"
-href="https://wa.me/923020534276?text=I%20want%20Prefab%20House%20information"
-target="_blank">
-WhatsApp For Details
-</a>
-
-</div>
-</div>
-
-</div>
-</section>
-
-
-<!-- ABOUT -->
-
-<section class="section about">
-
-<h2 class="section-title">
-About Bilal Container
-</h2>
-
-<p>
-Bilal Container & Prefab Cabin House provides
-containers, furnished container rooms,
-prefab security guard cabins, prefab bathrooms,
-prefab rooms and prefab houses.
-</p>
-
-<p>
-Custom sizes and designs are also available
-according to customer requirements.
-</p>
-
-<p>
-🇵🇰 All Pakistan Delivery Available
-</p>
+    </div>
 
 </section>
 
 
-<!-- CONTACT -->
+<section class="features">
 
-<section class="section contact" id="contact">
+    <div class="section">
 
-<h2 class="section-title">
-Contact Bilal Container
-</h2>
+        <div class="title">
+            <h2>Why Choose Bilal Container?</h2>
+            <p>Professional prefab solutions</p>
+        </div>
 
-<p>
-For price, size, design and order information
-contact us by Call or WhatsApp.
-</p>
 
-<div class="contact-number">
-03020534276
-</div>
+        <div class="grid">
 
-<a class="button call"
-href="tel:03020534276">
-📞 Call Now
-</a>
+            <div class="feature">
+                <div class="icon">🏗️</div>
+                <h3>Quality Work</h3>
+                <p>Strong and professional construction.</p>
+            </div>
 
-<a class="button whatsapp"
-href="https://wa.me/923020534276"
-target="_blank">
-💬 WhatsApp Now
-</a>
+            <div class="feature">
+                <div class="icon">📐</div>
+                <h3>Custom Sizes</h3>
+                <p>Sizes and designs according to requirements.</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">🚚</div>
+                <h3>All Pakistan Delivery</h3>
+                <p>Delivery available across Pakistan.</p>
+            </div>
+
+            <div class="feature">
+                <div class="icon">💬</div>
+                <h3>Easy Contact</h3>
+                <p>Contact us directly through WhatsApp.</p>
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- FOOTER -->
+<section class="section">
+
+    <div class="contact">
+
+        <h2>Need a Container or Prefab Unit?</h2>
+
+        <p>
+            Send your required size and design
+            on WhatsApp for details.
+        </p>
+
+        <div class="phone">
+            📞 03020534276
+        </div>
+
+        <a href="tel:03020534276"
+        class="btn call">
+            Call Now
+        </a>
+
+        <a href="https://wa.me/923020534276"
+        class="btn whatsapp">
+            WhatsApp Now
+        </a>
+
+    </div>
+
+</section>
+
 
 <footer>
 
-<h3>
-Bilal Container & Prefab Cabin House
-</h3>
+    <h3>Bilal Container & Prefab Cabin House</h3>
 
-<p>
-Owner: Khalil
-</p>
+    <p>Owner: Khalil</p>
 
-<p>
-Call / WhatsApp: 03020534276
-</p>
+    <p>📞 03020534276</p>
 
-<p>
-All Pakistan Delivery Available 🇵🇰
-</p>
+    <p>🇵🇰 All Pakistan Delivery Available</p>
 
-<p>
-© 2026 Bilal Container
-</p>
+    <p>© 2026 Bilal Container. All Rights Reserved.</p>
 
 </footer>
 
 
-<!-- FLOATING WHATSAPP -->
-
-<a class="whatsapp-float"
-href="https://wa.me/923020534276"
-target="_blank">
-
+<a href="https://wa.me/923020534276"
+class="float">
 💬
-
 </a>
-
 
 </body>
 </html>
