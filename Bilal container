@@ -1,0 +1,2265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Bilal Container & Prefab Cabin House - Containers, prefab rooms, guard cabins, bathrooms and prefab houses. All Pakistan delivery available.">
+<meta name="keywords" content="container Pakistan, prefab house, prefab room, guard cabin, container room, prefab bathroom">
+<meta name="author" content="Bilal Container & Prefab Cabin House">
+
+<title>Bilal Container & Prefab Cabin House</title>
+
+<style>
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fa;
+    color:#172033;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+:root{
+    --dark:#0b1220;
+    --dark2:#111827;
+    --gold:#f59e0b;
+    --gold2:#d97706;
+    --green:#16a34a;
+    --white:#ffffff;
+    --muted:#64748b;
+    --light:#f5f7fa;
+    --border:#e5e7eb;
+    --shadow:0 15px 40px rgba(15,23,42,.10);
+}
+
+/* =========================
+   TOP BAR
+========================= */
+.topbar{
+    background:var(--dark);
+    color:#e5e7eb;
+    text-align:center;
+    padding:9px 15px;
+    font-size:13px;
+}
+
+.topbar strong{
+    color:var(--gold);
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    background:white;
+    min-height:82px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+    padding:15px 5%;
+    border-bottom:1px solid var(--border);
+    position:relative;
+    z-index:1001;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    background:linear-gradient(135deg,var(--gold),var(--gold2));
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    box-shadow:0 8px 20px rgba(217,119,6,.25);
+}
+
+.logo-text h1{
+    color:var(--dark);
+    font-size:21px;
+    line-height:1.2;
+}
+
+.logo-text p{
+    color:var(--gold2);
+    font-size:12px;
+    font-weight:bold;
+    margin-top:3px;
+}
+
+.header-buttons{
+    display:flex;
+    gap:9px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    padding:12px 18px;
+    border-radius:9px;
+    color:white;
+    font-weight:bold;
+    font-size:14px;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-call{
+    background:var(--gold2);
+}
+
+.btn-wa{
+    background:var(--green);
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+nav{
+    background:var(--dark2);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+.nav-inner{
+    max-width:1250px;
+    margin:auto;
+    padding:0 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:3px;
+    overflow-x:auto;
+}
+
+nav a{
+    color:#dbe3ef;
+    padding:14px 12px;
+    font-size:13px;
+    font-weight:bold;
+    white-space:nowrap;
+    transition:.2s;
+}
+
+nav a:hover,
+nav a.active{
+    color:white;
+    background:var(--gold2);
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+    min-height:590px;
+    background:
+        linear-gradient(90deg,rgba(5,10,18,.90),rgba(5,10,18,.58),rgba(5,10,18,.40)),
+        url("images/background.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-content{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:80px 25px;
+}
+
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    background:rgba(245,158,11,.14);
+    border:1px solid rgba(245,158,11,.5);
+    color:#fbbf24;
+    padding:8px 14px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.hero h2{
+    max-width:800px;
+    color:white;
+    font-size:clamp(38px,6vw,70px);
+    line-height:1.05;
+    margin-bottom:20px;
+    letter-spacing:-2px;
+}
+
+.hero h2 span{
+    color:#fbbf24;
+}
+
+.hero-description{
+    max-width:700px;
+    color:#dbe3ef;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:30px;
+}
+
+.hero-btn{
+    padding:15px 24px;
+    border-radius:9px;
+    color:white;
+    font-weight:bold;
+    display:inline-flex;
+    gap:8px;
+    align-items:center;
+}
+
+.hero-primary{
+    background:var(--gold2);
+}
+
+.hero-secondary{
+    background:var(--green);
+}
+
+.hero-features{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:35px;
+}
+
+.hero-feature{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.14);
+    backdrop-filter:blur(8px);
+    color:#f1f5f9;
+    padding:10px 14px;
+    border-radius:8px;
+    font-size:13px;
+}
+
+/* =========================
+   STATS
+========================= */
+.stats{
+    max-width:1100px;
+    margin:-55px auto 0;
+    position:relative;
+    z-index:5;
+    padding:0 15px;
+}
+
+.stats-grid{
+    background:white;
+    border-radius:16px;
+    box-shadow:var(--shadow);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    overflow:hidden;
+}
+
+.stat{
+    padding:25px 15px;
+    text-align:center;
+    border-right:1px solid var(--border);
+}
+
+.stat:last-child{
+    border-right:0;
+}
+
+.stat-number{
+    font-size:27px;
+    font-weight:900;
+    color:var(--gold2);
+}
+
+.stat-text{
+    color:var(--muted);
+    font-size:13px;
+    margin-top:3px;
+}
+
+/* =========================
+   SECTION
+========================= */
+.section{
+    padding:90px 15px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 40px;
+}
+
+.section-label{
+    color:var(--gold2);
+    font-size:13px;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    margin-bottom:8px;
+}
+
+.section-title{
+    color:var(--dark);
+    font-size:clamp(28px,4vw,42px);
+    line-height:1.2;
+    margin-bottom:12px;
+}
+
+.section-description{
+    color:var(--muted);
+    font-size:15px;
+}
+
+/* =========================
+   SEARCH + FILTER
+========================= */
+.shop-tools{
+    margin-bottom:35px;
+}
+
+.search-wrap{
+    max-width:700px;
+    margin:0 auto 20px;
+    position:relative;
+}
+
+.search-wrap input{
+    width:100%;
+    padding:17px 20px 17px 48px;
+    border:1px solid var(--border);
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    background:white;
+    box-shadow:0 8px 25px rgba(15,23,42,.06);
+}
+
+.search-icon{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:18px;
+}
+
+.filters{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.filter-btn{
+    border:1px solid var(--border);
+    background:white;
+    color:#475569;
+    padding:9px 15px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:13px;
+    font-weight:bold;
+    transition:.2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+    background:var(--dark);
+    color:white;
+    border-color:var(--dark);
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.product{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(15,23,42,.07);
+    transition:.3s;
+}
+
+.product:hover{
+    transform:translateY(-7px);
+    box-shadow:0 20px 45px rgba(15,23,42,.14);
+}
+
+.product-photo{
+    height:245px;
+    background:#e2e8f0;
+    position:relative;
+    overflow:hidden;
+}
+
+.product-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product:hover .product-photo img{
+    transform:scale(1.05);
+}
+
+.no-photo{
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#64748b;
+    text-align:center;
+    padding:20px;
+}
+
+.product-tag{
+    position:absolute;
+    left:14px;
+    top:14px;
+    background:var(--gold2);
+    color:white;
+    font-size:11px;
+    font-weight:bold;
+    padding:6px 10px;
+    border-radius:6px;
+}
+
+.product-info{
+    padding:21px;
+}
+
+.category{
+    color:var(--gold2);
+    font-size:11px;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.product h3{
+    color:var(--dark);
+    font-size:20px;
+    line-height:1.3;
+    margin:7px 0 12px;
+}
+
+.size{
+    color:#64748b;
+    font-size:14px;
+}
+
+.price{
+    color:var(--gold2);
+    font-size:24px;
+    font-weight:900;
+    margin:14px 0 17px;
+}
+
+.order-btn{
+    width:100%;
+    background:var(--green);
+    color:white;
+    padding:13px;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+    display:block;
+    transition:.2s;
+}
+
+.order-btn:hover{
+    background:#15803d;
+}
+
+/* =========================
+   SERVICES
+========================= */
+.services{
+    background:#eef2f7;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.service{
+    background:white;
+    padding:27px 20px;
+    border-radius:14px;
+    border:1px solid var(--border);
+    text-align:center;
+    transition:.25s;
+}
+
+.service:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+}
+
+.service-icon{
+    width:58px;
+    height:58px;
+    margin:0 auto 15px;
+    border-radius:14px;
+    background:#fff7ed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+}
+
+.service h3{
+    font-size:17px;
+    margin-bottom:7px;
+}
+
+.service p{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about{
+    background:var(--dark);
+    color:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about .section-title{
+    color:white;
+}
+
+.about-text{
+    color:#cbd5e1;
+    line-height:1.9;
+}
+
+.about-list{
+    margin-top:25px;
+    display:grid;
+    gap:12px;
+}
+
+.about-list div{
+    color:#e2e8f0;
+}
+
+.about-card{
+    background:linear-gradient(145deg,#172033,#0f172a);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:18px;
+    padding:30px;
+}
+
+.about-card h3{
+    color:#fbbf24;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    color:#cbd5e1;
+    font-size:14px;
+    line-height:1.8;
+}
+
+/* =========================
+   CTA
+========================= */
+.cta{
+    background:
+        linear-gradient(rgba(15,23,42,.92),rgba(15,23,42,.92)),
+        url("images/background.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:clamp(30px,4vw,46px);
+    margin-bottom:12px;
+}
+
+.cta p{
+    color:#cbd5e1;
+    max-width:650px;
+    margin:0 auto;
+}
+
+.cta-buttons{
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact{
+    background:white;
+    text-align:center;
+}
+
+.contact-number{
+    font-size:clamp(27px,4vw,40px);
+    font-weight:900;
+    color:var(--dark);
+    margin:20px 0;
+}
+
+.contact-number a{
+    color:var(--dark);
+}
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+    background:#060a12;
+    color:white;
+    padding:45px 15px 25px;
+}
+
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:40px;
+}
+
+footer h3{
+    margin-bottom:12px;
+}
+
+footer p,
+footer a{
+    color:#94a3b8;
+    font-size:14px;
+}
+
+.footer-links{
+    display:grid;
+    gap:7px;
+}
+
+.footer-bottom{
+    max-width:1200px;
+    margin:35px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+    text-align:center;
+    color:#64748b;
+    font-size:12px;
+}
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:var(--green);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+    z-index:9999;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(22,163,74,.5)}
+    70%{box-shadow:0 0 0 15px rgba(22,163,74,0)}
+    100%{box-shadow:0 0 0 0 rgba(22,163,74,0)}
+}
+
+/* =========================
+   BACK TO TOP
+========================= */
+.back-top{
+    position:fixed;
+    right:20px;
+    bottom:92px;
+    width:42px;
+    height:42px;
+    border:0;
+    border-radius:9px;
+    background:var(--dark);
+    color:white;
+    cursor:pointer;
+    display:none;
+    z-index:9998;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media(max-width:950px){
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:700px){
+
+    .topbar{
+        font-size:11px;
+    }
+
+    header{
+        padding:13px;
+        display:block;
+        text-align:center;
+    }
+
+    .logo{
+        justify-content:center;
+    }
+
+    .logo-text h1{
+        font-size:17px;
+    }
+
+    .logo-text p{
+        font-size:10px;
+    }
+
+    .logo-icon{
+        width:42px;
+        height:42px;
+        font-size:20px;
+    }
+
+    .header-buttons{
+        justify-content:center;
+        margin-top:13px;
+    }
+
+    .btn{
+        padding:10px 14px;
+        font-size:12px;
+    }
+
+    .nav-inner{
+        justify-content:flex-start;
+    }
+
+    nav a{
+        padding:12px 10px;
+        font-size:12px;
+    }
+
+    .hero{
+        min-height:570px;
+    }
+
+    .hero-content{
+        padding:70px 18px;
+        text-align:center;
+    }
+
+    .hero h2{
+        letter-spacing:-1px;
+    }
+
+    .hero-description{
+        font-size:15px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-features{
+        justify-content:center;
+    }
+
+    .stats{
+        margin:-35px 12px 0;
+        padding:0;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stat{
+        padding:19px 10px;
+    }
+
+    .stat:nth-child(2){
+        border-right:0;
+    }
+
+    .stat:nth-child(-n+2){
+        border-bottom:1px solid var(--border);
+    }
+
+    .section{
+        padding:65px 13px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+        max-width:470px;
+        margin:auto;
+    }
+
+    .product-photo{
+        height:240px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .service{
+        padding:20px 12px;
+    }
+
+    .service h3{
+        font-size:15px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .whatsapp-float{
+        width:56px;
+        height:56px;
+        right:15px;
+        bottom:15px;
+    }
+
+    .back-top{
+        right:15px;
+        bottom:80px;
+    }
+}
+
+/* =========================
+   HIDDEN SEARCH
+========================= */
+.product.hidden{
+    display:none !important;
+}
+
+.no-results{
+    display:none;
+    text-align:center;
+    color:var(--muted);
+    padding:30px;
+    grid-column:1/-1;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    🇵🇰 <strong>All Pakistan Delivery Available</strong>
+    &nbsp; | &nbsp; Call / WhatsApp: <strong>03020534276</strong>
+</div>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🏗️
+        </div>
+
+        <div class="logo-text">
+            <h1>Bilal Container & Prefab</h1>
+            <p>Cabin House • Quality • Strength • Professional Work</p>
+        </div>
+
+    </div>
+
+    <div class="header-buttons">
+
+        <a class="btn btn-call" href="tel:03020534276">
+            📞 Call
+        </a>
+
+        <a class="btn btn-wa"
+           href="https://wa.me/923020534276"
+           target="_blank">
+            💬 WhatsApp
+        </a>
+
+    </div>
+
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+
+    <div class="nav-inner">
+
+        <a href="#home">Home</a>
+        <a href="#containers">Containers</a>
+        <a href="#furnished">Furnished</a>
+        <a href="#guard">Guard Cabins</a>
+        <a href="#bathrooms">Bathrooms</a>
+        <a href="#rooms">Prefab Rooms</a>
+        <a href="#houses">Prefab Houses</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            ⭐ Quality Prefab & Container Solutions
+        </div>
+
+        <h2>
+            Strong.
+            <span>Modern.</span>
+            Built For You.
+        </h2>
+
+        <p class="hero-description">
+            Premium containers, furnished container rooms,
+            security guard cabins, prefab bathrooms,
+            prefab rooms and custom prefab houses.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a class="hero-btn hero-primary"
+               href="#containers">
+                📦 View Products
+            </a>
+
+            <a class="hero-btn hero-secondary"
+               href="https://wa.me/923020534276?text=Hello%20Bilal%20Container%2C%20I%20want%20information%20about%20your%20products."
+               target="_blank">
+                💬 Get A Quote
+            </a>
+
+        </div>
+
+        <div class="hero-features">
+
+            <div class="hero-feature">
+                ✓ Custom Sizes
+            </div>
+
+            <div class="hero-feature">
+                ✓ Professional Work
+            </div>
+
+            <div class="hero-feature">
+                ✓ All Pakistan Delivery
+            </div>
+
+            <div class="hero-feature">
+                ✓ WhatsApp Support
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+<div class="stats">
+
+    <div class="stats-grid">
+
+        <div class="stat">
+            <div class="stat-number">100+</div>
+            <div class="stat-text">Projects</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number">10+</div>
+            <div class="stat-text">Product Types</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number">PK</div>
+            <div class="stat-text">Nationwide Delivery</div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-number">24/7</div>
+            <div class="stat-text">WhatsApp Contact</div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- PRODUCTS -->
+<section class="section" id="containers">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                Our Products
+            </div>
+
+            <h2 class="section-title">
+                Containers & Prefab Solutions
+            </h2>
+
+            <p class="section-description">
+                Choose your required size and contact us
+                directly on WhatsApp for details.
+            </p>
+
+        </div>
+
+        <!-- SEARCH -->
+        <div class="shop-tools">
+
+            <div class="search-wrap">
+
+                <span class="search-icon">🔎</span>
+
+                <input
+                    type="search"
+                    id="searchBox"
+                    placeholder="Search product or size e.g. 10x20..."
+                >
+
+            </div>
+
+            <div class="filters">
+
+                <button class="filter-btn active"
+                        data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="container">
+                    Containers
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="furnished">
+                    Furnished
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="guard">
+                    Guard Cabins
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="bathroom">
+                    Bathrooms
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="room">
+                    Prefab Rooms
+                </button>
+
+                <button class="filter-btn"
+                        data-filter="house">
+                    Houses
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT GRID -->
+        <div class="products" id="productGrid">
+
+            <!-- 8x20 -->
+            <div class="product" data-category="container">
+
+                <div class="product-photo">
+
+                    <span class="product-tag">
+                        Container
+                    </span>
+
+                    <img src="images/container-8x20.jpg"
+                         alt="8x20 Container"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 8×20 Container Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Container</span>
+
+                    <h3>8 × 20 Container</h3>
+
+                    <div class="size">
+                        📏 Size: 8 × 20
+                    </div>
+
+                    <div class="price">
+                        Rs. 380,000
+                    </div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%208x20%20Container"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 10x20 -->
+            <div class="product" data-category="container">
+
+                <div class="product-photo">
+
+                    <span class="product-tag">
+                        Popular
+                    </span>
+
+                    <img src="images/container-10x20.jpg"
+                         alt="10x20 Container"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 10×20 Container Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Container</span>
+
+                    <h3>10 × 20 Container</h3>
+
+                    <div class="size">
+                        📏 Size: 10 × 20
+                    </div>
+
+                    <div class="price">
+                        Rs. 480,000
+                    </div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%2010x20%20Container"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 10x30 -->
+            <div class="product" data-category="container">
+
+                <div class="product-photo">
+
+                    <span class="product-tag">
+                        Container
+                    </span>
+
+                    <img src="images/container-10x30.jpg"
+                         alt="10x30 Container"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 10×30 Container Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Container</span>
+
+                    <h3>10 × 30 Container</h3>
+
+                    <div class="size">📏 Size: 10 × 30</div>
+
+                    <div class="price">Rs. 600,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%2010x30%20Container"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 8x30 -->
+            <div class="product" data-category="container">
+
+                <div class="product-photo">
+
+                    <img src="images/container-8x30.jpg"
+                         alt="8x30 Container"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 8×30 Container Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Container</span>
+
+                    <h3>8 × 30 Container</h3>
+
+                    <div class="size">📏 Size: 8 × 30</div>
+
+                    <div class="price">Rs. 550,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%208x30%20Container"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 8x40 -->
+            <div class="product" data-category="container">
+
+                <div class="product-photo">
+
+                    <img src="images/container-8x40.jpg"
+                         alt="8x40 Container"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 8×40 Container Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Container</span>
+
+                    <h3>8 × 40 Container</h3>
+
+                    <div class="size">📏 Size: 8 × 40</div>
+
+                    <div class="price">Rs. 700,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%208x40%20Container"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- 10x40 -->
+            <div class="product" data-category="container">
+
+                <div class="product-photo">
+
+                    <img src="images/container-10x40.jpg"
+                         alt="10x40 Container"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 10×40 Container Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Container</span>
+
+                    <h3>10 × 40 Container</h3>
+
+                    <div class="size">📏 Size: 10 × 40</div>
+
+                    <div class="price">Rs. 950,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%2010x40%20Container"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- FURNISHED 8x20 -->
+            <div class="product" data-category="furnished" id="furnished">
+
+                <div class="product-photo">
+
+                    <span class="product-tag">
+                        Furnished
+                    </span>
+
+                    <img src="images/furnished-8x20.jpg"
+                         alt="8x20 Furnished Container Room"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 8×20 Furnished Room Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Furnished Room</span>
+
+                    <h3>8 × 20 Furnished Room</h3>
+
+                    <div class="size">📏 Size: 8 × 20</div>
+
+                    <div class="price">Rs. 600,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%208x20%20Furnished%20Container%20Room"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- FURNISHED 10x20 -->
+            <div class="product" data-category="furnished">
+
+                <div class="product-photo">
+
+                    <span class="product-tag">
+                        Popular
+                    </span>
+
+                    <img src="images/furnished-10x20.jpg"
+                         alt="10x20 Furnished Container Room"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 10×20 Furnished Room Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Furnished Room</span>
+
+                    <h3>10 × 20 Furnished Room</h3>
+
+                    <div class="size">📏 Size: 10 × 20</div>
+
+                    <div class="price">Rs. 720,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%2010x20%20Furnished%20Container%20Room"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- FURNISHED 10x30 -->
+            <div class="product" data-category="furnished">
+
+                <div class="product-photo">
+
+                    <img src="images/furnished-10x30.jpg"
+                         alt="10x30 Furnished Container Room"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 10×30 Furnished Room Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Furnished Room</span>
+
+                    <h3>10 × 30 Furnished Room</h3>
+
+                    <div class="size">📏 Size: 10 × 30</div>
+
+                    <div class="price">Rs. 1,100,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%2010x30%20Furnished%20Container%20Room"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- GUARD 4x4 -->
+            <div class="product" data-category="guard" id="guard">
+
+                <div class="product-photo">
+
+                    <span class="product-tag">
+                        Guard Cabin
+                    </span>
+
+                    <img src="images/guard-4x4.jpg"
+                         alt="4x4 Guard Cabin"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 4×4 Guard Cabin Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Guard Cabin</span>
+
+                    <h3>Prefab Security Guard Cabin</h3>
+
+                    <div class="size">📏 Size: 4 × 4</div>
+
+                    <div class="price">Rs. 135,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%204x4%20Guard%20Cabin"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- GUARD 4x6 -->
+            <div class="product" data-category="guard">
+
+                <div class="product-photo">
+
+                    <img src="images/guard-4x6.jpg"
+                         alt="4x6 Guard Cabin"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 4×6 Guard Cabin Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Guard Cabin</span>
+
+                    <h3>Prefab Security Guard Cabin</h3>
+
+                    <div class="size">📏 Size: 4 × 6</div>
+
+                    <div class="price">Rs. 170,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%204x6%20Guard%20Cabin"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- GUARD 6x6 -->
+            <div class="product" data-category="guard">
+
+                <div class="product-photo">
+
+                    <img src="images/guard-6x6.jpg"
+                         alt="6x6 Guard Cabin"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 6×6 Guard Cabin Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Guard Cabin</span>
+
+                    <h3>Prefab Security Guard Cabin</h3>
+
+                    <div class="size">📏 Size: 6 × 6</div>
+
+                    <div class="price">Rs. 230,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%206x6%20Guard%20Cabin"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- BATHROOM 4x4 -->
+            <div class="product" data-category="bathroom" id="bathrooms">
+
+                <div class="product-photo">
+
+                    <span class="product-tag">
+                        Bathroom
+                    </span>
+
+                    <img src="images/bathroom-4x4.jpg"
+                         alt="4x4 Prefab Bathroom"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 4×4 Bathroom Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Prefab Bathroom</span>
+
+                    <h3>Prefab Bathroom</h3>
+
+                    <div class="size">📏 Size: 4 × 4</div>
+
+                    <div class="price">Rs. 160,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%204x4%20Prefab%20Bathroom"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- BATHROOM 4x6 -->
+            <div class="product" data-category="bathroom">
+
+                <div class="product-photo">
+
+                    <img src="images/bathroom-4x6.jpg"
+                         alt="4x6 Prefab Bathroom"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 4×6 Bathroom Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Prefab Bathroom</span>
+
+                    <h3>Prefab Bathroom</h3>
+
+                    <div class="size">📏 Size: 4 × 6</div>
+
+                    <div class="price">Rs. 190,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%204x6%20Prefab%20Bathroom"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- BATHROOM 6x6 -->
+            <div class="product" data-category="bathroom">
+
+                <div class="product-photo">
+
+                    <img src="images/bathroom-6x6.jpg"
+                         alt="6x6 Prefab Bathroom"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 6×6 Bathroom Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Prefab Bathroom</span>
+
+                    <h3>Prefab Bathroom</h3>
+
+                    <div class="size">📏 Size: 6 × 6</div>
+
+                    <div class="price">Rs. 250,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%206x6%20Prefab%20Bathroom"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ROOM 8x8 -->
+            <div class="product" data-category="room" id="rooms">
+
+                <div class="product-photo">
+
+                    <span class="product-tag">
+                        Prefab Room
+                    </span>
+
+                    <img src="images/room-8x8.jpg"
+                         alt="8x8 Prefab Room"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 8×8 Room Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Prefab Room</span>
+
+                    <h3>Prefab Room</h3>
+
+                    <div class="size">📏 Size: 8 × 8</div>
+
+                    <div class="price">Rs. 320,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%208x8%20Prefab%20Room"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ROOM 8x10 -->
+            <div class="product" data-category="room">
+
+                <div class="product-photo">
+
+                    <img src="images/room-8x10.jpg"
+                         alt="8x10 Prefab Room"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 8×10 Room Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Prefab Room</span>
+
+                    <h3>Prefab Room</h3>
+
+                    <div class="size">📏 Size: 8 × 10</div>
+
+                    <div class="price">Rs. 380,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%208x10%20Prefab%20Room"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ROOM 10x10 -->
+            <div class="product" data-category="room">
+
+                <div class="product-photo">
+
+                    <img src="images/room-10x10.jpg"
+                         alt="10x10 Prefab Room"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 10×10 Room Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Prefab Room</span>
+
+                    <h3>Prefab Room</h3>
+
+                    <div class="size">📏 Size: 10 × 10</div>
+
+                    <div class="price">Rs. 420,000</div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%2010x10%20Prefab%20Room"
+                       target="_blank">
+                        💬 WhatsApp For Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- HOUSE -->
+            <div class="product" data-category="house" id="houses">
+
+                <div class="product-photo">
+
+                    <span class="product-tag">
+                        Custom
+                    </span>
+
+                    <img src="images/prefab-house-1.jpg"
+                         alt="Custom Prefab House"
+                         onerror="this.style.display='none';this.parentElement.innerHTML='<div class=no-photo>📷 Prefab House Photo</div>'">
+
+                </div>
+
+                <div class="product-info">
+
+                    <span class="category">Prefab House</span>
+
+                    <h3>Custom Prefab House</h3>
+
+                    <div class="size">
+                        📏 Custom Size & Design
+                    </div>
+
+                    <div class="price">
+                        Contact Us
+                    </div>
+
+                    <a class="order-btn"
+                       href="https://wa.me/923020534276?text=I%20want%20information%20about%20Custom%20Prefab%20House"
+                       target="_blank">
+                        💬 Get Custom Quote
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="no-results" id="noResults">
+                😕 No product found. Try another size or product name.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                What We Offer
+            </div>
+
+            <h2 class="section-title">
+                Professional Services
+            </h2>
+
+            <p class="section-description">
+                Complete solutions according to your requirements.
+            </p>
+
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service">
+                <div class="service-icon">📦</div>
+                <h3>Containers</h3>
+                <p>Different sizes available according to requirement.</p>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🏠</div>
+                <h3>Prefab Rooms</h3>
+                <p>Strong and practical prefab room solutions.</p>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🛡️</div>
+                <h3>Guard Cabins</h3>
+                <p>Prefab security cabins for offices and sites.</p>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🚿</div>
+                <h3>Prefab Bathrooms</h3>
+                <p>Ready prefab bathroom solutions in different sizes.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="section about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div>
+
+                <div class="section-label">
+                    About Us
+                </div>
+
+                <h2 class="section-title">
+                    Bilal Container & Prefab Cabin House
+                </h2>
+
+                <p class="about-text">
+                    We provide containers, furnished container rooms,
+                    prefab security guard cabins, prefab bathrooms,
+                    prefab rooms and custom prefab houses.
+                </p>
+
+                <div class="about-list">
+
+                    <div>✓ Custom sizes and designs available</div>
+                    <div>✓ Quality-focused construction</div>
+                    <div>✓ Professional finishing</div>
+                    <div>✓ All Pakistan delivery available</div>
+                    <div>✓ Direct Call & WhatsApp support</div>
+
+                </div>
+
+            </div>
+
+            <div class="about-card">
+
+                <h3>Need a Custom Design?</h3>
+
+                <p>
+                    Apni required size, design aur budget WhatsApp
+                    par send karein. Hum aapki requirement ke mutabiq
+                    prefab room, cabin, container ya house ka solution
+                    discuss karenge.
+                </p>
+
+                <br>
+
+                <a class="btn btn-wa"
+                   href="https://wa.me/923020534276?text=Hello%20Bilal%20Container%2C%20I%20need%20a%20custom%20design."
+                   target="_blank">
+                    💬 Discuss On WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="section cta">
+
+    <div class="container">
+
+        <h2>Ready To Build Your Project?</h2>
+
+        <p>
+            Contact us today for price, size, design and delivery details.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a class="btn btn-call"
+               href="tel:03020534276">
+                📞 Call 03020534276
+            </a>
+
+            <a class="btn btn-wa"
+               href="https://wa.me/923020534276?text=Hello%20Bilal%20Container%2C%20I%20want%20a%20quotation."
+               target="_blank">
+                💬 WhatsApp For Quotation
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                Contact
+            </div>
+
+            <h2 class="section-title">
+                Let's Talk About Your Project
+            </h2>
+
+            <p class="section-description">
+                Price, size, design or order information ke liye contact karein.
+            </p>
+
+        </div>
+
+        <div class="contact-number">
+            <a href="tel:03020534276">
+                03020534276
+            </a>
+        </div>
+
+        <div class="contact-buttons">
+
+            <a class="btn btn-call"
+               href="tel:03020534276">
+                📞 Call Now
+            </a>
+
+            <a class="btn btn-wa"
+               href="https://wa.me/923020534276"
+               target="_blank">
+                💬 WhatsApp Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>
+                Bilal Container & Prefab Cabin House
+            </h3>
+
+            <p>
+                Containers, prefab rooms, guard cabins,
+                bathrooms and custom prefab houses.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#containers">Products</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <div class="footer-links">
+
+                <a href="tel:03020534276">
+                    📞 03020534276
+                </a>
+
+                <a href="https://wa.me/923020534276"
+                   target="_blank">
+                    💬 WhatsApp
+                </a>
+
+                <span style="color:#94a3b8;font-size:14px;">
+                    🇵🇰 All Pakistan Delivery
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Bilal Container & Prefab Cabin House.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp-float"
+   href="https://wa.me/923020534276?text=Hello%20Bilal%20Container%2C%20I%20need%20information."
+   target="_blank"
+   aria-label="WhatsApp">
+    💬
+</a>
+
+<!-- BACK TO TOP -->
+<button class="back-top"
+        id="backTop"
+        aria-label="Back to top">
+    ↑
+</button>
+
+<script>
+
+/* =========================
+   SEARCH + FILTER
+========================= */
+
+const searchBox = document.getElementById("searchBox");
+const products = document.querySelectorAll(".product");
+const filterButtons = document.querySelectorAll(".filter-btn");
+const noResults = document.getElementById("noResults");
+
+let currentFilter = "all";
+
+function filterProducts(){
+
+    const searchText =
+        searchBox.value.toLowerCase().trim();
+
+    let visible = 0;
+
+    products.forEach(product => {
+
+        const category =
+            product.dataset.category;
+
+        const text =
+            product.innerText.toLowerCase();
+
+        const categoryMatch =
+            currentFilter === "all" ||
+            category === currentFilter;
+
+        const searchMatch =
+            text.includes(searchText);
+
+        if(categoryMatch && searchMatch){
+
+            product.classList.remove("hidden");
+            visible++;
+
+        }else{
+
+            product.classList.add("hidden");
+
+        }
+
+    });
+
+    noResults.style.display =
+        visible === 0 ? "block" : "none";
+}
+
+searchBox.addEventListener(
+    "input",
+    filterProducts
+);
+
+filterButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        filterButtons.forEach(btn =>
+            btn.classList.remove("active")
+        );
+
+        button.classList.add("active");
+
+        currentFilter =
+            button.dataset.filter;
+
+        filterProducts();
+
+    });
+
+});
+
+/* =========================
+   BACK TO TOP
+========================= */
+
+const backTop =
+    document.getElementById("backTop");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 500){
+
+        backTop.style.display = "block";
+
+    }else{
+
+        backTop.style.display = "none";
+
+    }
+
+});
+
+backTop.addEventListener("click", () => {
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+});
+
+/* =========================
+   ACTIVE NAV
+========================= */
+
+const navLinks =
+    document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    document
+        .querySelectorAll("section[id]")
+        .forEach(section => {
+
+            const sectionTop =
+                section.offsetTop - 150;
+
+            if(window.scrollY >= sectionTop){
+
+                current = section.id;
+
+            }
+
+        });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if(
+            link.getAttribute("href") ===
+            "#" + current
+        ){
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
