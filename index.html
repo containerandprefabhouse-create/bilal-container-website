@@ -2,115 +2,775 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
 
-<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- =========================
+       GOOGLE / SEO
+  ========================== -->
 
-<meta name="google-site-verification"
-content="mZL0BKDx_j44jRtgHN3fbo0H54jsElmaPX9iBmKv8KY">
+  <title>Bilal Container & Prefab House | Pakistan</title>
 
-<title>Bilal Container & Prefab House Pakistan</title>
+  <meta name="description"
+        content="Bilal Container & Prefab House - Container Houses, Prefab Houses, Furnished Container Rooms, Guard Cabins, Prefab Rooms and Portable Bathrooms in Pakistan.">
 
-<meta name="description"
-content="Bilal Container & Prefab House provides container houses, prefab houses, prefab rooms, porta cabins, guard cabins, furnished container rooms and portable bathrooms across Pakistan.">
+  <meta name="keywords"
+        content="Bilal Container, Bilal Container & Prefab House, Container House Pakistan, Prefab House Pakistan, Container Room, Guard Cabin, Prefab Room, Prefab Bathroom">
 
-<meta name="robots" content="index, follow">
+  <meta name="author"
+        content="Bilal Container & Prefab House">
 
-<meta name="author"
-content="Bilal Container & Prefab House">
+  <meta name="robots"
+        content="index, follow">
 
-<meta name="keywords"
-content="container house Pakistan, prefab house Pakistan, container room Pakistan, prefab room Pakistan, porta cabin Pakistan, portable cabin Pakistan, guard cabin Pakistan, prefab bathroom Pakistan, portable bathroom Pakistan, container office Pakistan, furnished container room Pakistan">
+  <!-- Google Verification -->
+  <meta name="google-site-verification"
+        content="mZL0BKDx_j44jRtgHN3fbo0H54jsElma">
 
-<meta name="theme-color" content="#111111">
+  <!-- FAVICON / LOGO -->
+  <link rel="icon"
+        type="image/png"
+        href="logo.png">
 
-<!-- LOGO / FAVICON -->
+  <link rel="shortcut icon"
+        type="image/png"
+        href="logo.png">
 
-<link rel="icon" type="image/png" href="logo.png">
+  <!-- CANONICAL -->
+  <link rel="canonical"
+        href="https://containerandprefabhouse-create.github.io/bilal-container-website/">
 
-<link rel="shortcut icon" type="image/png" href="logo.png">
+  <!-- SOCIAL SHARING -->
+  <meta property="og:title"
+        content="Bilal Container & Prefab House">
 
-<link rel="apple-touch-icon" href="logo.png">
+  <meta property="og:description"
+        content="Container Houses, Prefab Houses, Furnished Rooms, Guard Cabins, Prefab Rooms and Portable Bathrooms in Pakistan.">
 
-<meta name="application-name"
-content="Bilal Container & Prefab House">
+  <meta property="og:type"
+        content="website">
 
-<!-- CANONICAL -->
+  <meta property="og:url"
+        content="https://containerandprefabhouse-create.github.io/bilal-container-website/">
 
-<link rel="canonical"
-href="https://containerandprefabhouse-create.github.io/bilal-container-website/">
+  <meta property="og:image"
+        content="logo.png">
 
-<!-- CSS -->
-
-<link rel="stylesheet" href="style.css">
-
-<!-- OPEN GRAPH -->
-
-<meta property="og:type" content="website">
-
-<meta property="og:title"
-content="Bilal Container & Prefab House">
-
-<meta property="og:description"
-content="Container Houses, Prefab Houses, Prefab Rooms, Porta Cabins, Guard Cabins and Portable Bathrooms across Pakistan.">
-
-<meta property="og:url"
-content="https://containerandprefabhouse-create.github.io/bilal-container-website/">
-
-<meta property="og:site_name"
-content="Bilal Container & Prefab House">
-
-<meta property="og:image"
-content="https://containerandprefabhouse-create.github.io/bilal-container-website/logo.png">
+  <!-- MOBILE COLOR -->
+  <meta name="theme-color"
+        content="#0b1728">
 
 
-<!-- LOCAL BUSINESS SCHEMA -->
+  <!-- =========================
+       STYLE
+  ========================== -->
 
-<script type="application/ld+json">
+  <style>
 
-{
-  "@context": "https://schema.org",
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  "@type": "LocalBusiness",
+    html {
+      scroll-behavior: smooth;
+    }
 
-  "name": "Bilal Container & Prefab House",
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #172033;
+      line-height: 1.6;
+    }
 
-  "description": "Container houses, prefab houses, prefab rooms, porta cabins, guard cabins, furnished container rooms and portable bathrooms in Pakistan.",
+    a {
+      text-decoration: none;
+    }
 
-  "telephone": "+923020534276",
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-  "url": "https://containerandprefabhouse-create.github.io/bilal-container-website/",
+    /* =========================
+       TOP BAR
+    ========================== */
 
-  "logo": "https://containerandprefabhouse-create.github.io/bilal-container-website/logo.png",
+    .topbar {
+      background: #0b1728;
+      color: white;
+      text-align: center;
+      padding: 9px 15px;
+      font-size: 14px;
+    }
 
-  "image": "https://containerandprefabhouse-create.github.io/bilal-container-website/logo.png",
+    /* =========================
+       NAVBAR
+    ========================== */
 
-  "areaServed": {
-    "@type": "Country",
-    "name": "Pakistan"
+    header {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 76px;
+      padding: 10px 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #0b1728;
+      font-weight: bold;
+    }
+
+    .brand img {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+    }
+
+    .brand-text {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 12px;
+      color: #4b8b5a;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    nav a {
+      color: #172033;
+      padding: 9px 10px;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      background: #4bbe76;
+      color: white;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: 570px;
+
+      display: flex;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          rgba(5,15,30,0.72),
+          rgba(5,15,30,0.72)
+        ),
+        url("images/container-cover.jpg") center/cover no-repeat;
+
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+      padding: 70px 25px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(75,190,118,0.18);
+      border: 1px solid #4bbe76;
+      color: #b9ffd0;
+      padding: 8px 14px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      max-width: 850px;
+      line-height: 1.08;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #4bbe76;
+    }
+
+    .hero p {
+      max-width: 750px;
+      font-size: 18px;
+      color: #edf3f7;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: #4bbe76;
+      color: white;
+    }
+
+    .btn-dark {
+      background: white;
+      color: #0b1728;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    /* =========================
+       SECTION
+    ========================== */
+
+    .section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 75px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title .small {
+      color: #4b8b5a;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      color: #0b1728;
+      margin: 8px 0 12px;
+    }
+
+    .section-title p {
+      max-width: 700px;
+      margin: auto;
+      color: #647080;
+    }
+
+    /* =========================
+       PRODUCT GRID
+    ========================== */
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+      transition: 0.25s;
+      border: 1px solid #e7ebef;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 14px 35px rgba(0,0,0,0.13);
+    }
+
+    .card-img {
+      height: 230px;
+      overflow: hidden;
+      background: #e9edf1;
+    }
+
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .card:hover .card-img img {
+      transform: scale(1.05);
+    }
+
+    .card-body {
+      padding: 23px;
+    }
+
+    .card-body h3 {
+      color: #0b1728;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .card-body p {
+      color: #687383;
+      margin-bottom: 18px;
+      font-size: 15px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about {
+      background: white;
+    }
+
+    .about-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .about-box p {
+      color: #596575;
+      margin-bottom: 17px;
+      font-size: 17px;
+    }
+
+    /* =========================
+       FEATURES
+    ========================== */
+
+    .features-section {
+      background: #0b1728;
+      color: white;
+    }
+
+    .features-section .section-title h2 {
+      color: white;
+    }
+
+    .features-section .section-title p {
+      color: #bac5d2;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      padding: 30px 22px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .feature-icon {
+      font-size: 38px;
+      margin-bottom: 13px;
+    }
+
+    .feature h3 {
+      margin-bottom: 9px;
+    }
+
+    .feature p {
+      color: #bdc7d3;
+      font-size: 14px;
+    }
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta {
+      max-width: 1100px;
+      margin: 70px auto;
+      padding: 55px 25px;
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #10243b,
+          #183752
+        );
+
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(28px, 4vw, 42px);
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #d4dce5;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .phone {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* =========================
+       FAQ
+    ========================== */
+
+    .faq {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    details {
+      background: white;
+      border: 1px solid #e2e7ec;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      padding: 18px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #0b1728;
+    }
+
+    details p {
+      margin-top: 12px;
+      color: #657080;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #07111f;
+      color: white;
+      text-align: center;
+      padding: 55px 20px 30px;
+    }
+
+    .footer-logo {
+      width: 75px;
+      height: 75px;
+      object-fit: contain;
+      margin: 0 auto 15px;
+    }
+
+    footer h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      color: #aeb8c5;
+      margin: 6px 0;
+      font-size: 14px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 25px;
+      padding-top: 20px;
+    }
+
+    /* =========================
+       FLOATING WHATSAPP
+    ========================== */
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+
+      width: 60px;
+      height: 60px;
+
+      border-radius: 50%;
+      background: #25d366;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 29px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+
+      z-index: 1500;
+    }
+
+    /* =========================
+       CHATBOT
+    ========================== */
+
+    .chat-button {
+      position: fixed;
+      right: 20px;
+      bottom: 92px;
+
+      width: 58px;
+      height: 58px;
+
+      border: none;
+      border-radius: 50%;
+
+      background: #0b1728;
+      color: white;
+
+      font-size: 25px;
+      cursor: pointer;
+
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+
+      z-index: 1500;
+    }
+
+    .chat-box {
+      display: none;
+
+      position: fixed;
+      right: 20px;
+      bottom: 160px;
+
+      width: 340px;
+      max-width: calc(100vw - 30px);
+
+      background: white;
+      border-radius: 15px;
+
+      overflow: hidden;
+
+      box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+
+      z-index: 2000;
+    }
+
+    .chat-box.active {
+      display: block;
+    }
+
+    .chat-header {
+      background: #0b1728;
+      color: white;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .close-chat {
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .chat-messages {
+      height: 290px;
+      overflow-y: auto;
+      padding: 15px;
+      background: #f4f7f9;
+    }
+
+    .bot-message,
+    .user-message {
+      padding: 10px 12px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      max-width: 90%;
+    }
+
+    .bot-message {
+      background: white;
+      color: #253044;
+    }
+
+    .user-message {
+      background: #4bbe76;
+      color: white;
+      margin-left: auto;
+    }
+
+    .chat-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .chat-options button {
+      border: 1px solid #d9e0e5;
+      background: white;
+      border-radius: 20px;
+      padding: 7px 10px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+
+    .chat-input input {
+      flex: 1;
+      border: none;
+      padding: 13px;
+      outline: none;
+    }
+
+    .chat-input button {
+      border: none;
+      background: #4bbe76;
+      color: white;
+      padding: 0 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .navbar {
+        flex-direction: column;
+        padding: 12px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        min-height: 520px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .brand-text {
+        font-size: 16px;
+      }
+
+      .brand img {
+        width: 48px;
+        height: 48px;
+      }
+
+      nav {
+        gap: 3px;
+      }
+
+      nav a {
+        font-size: 12px;
+        padding: 7px 6px;
+      }
+
+      .hero-content {
+        padding: 55px 20px;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 55px 17px;
+      }
+
+      .chat-box {
+        right: 10px;
+        bottom: 150px;
+      }
+
+      .whatsapp-float {
+        right: 15px;
+      }
+
+      .chat-button {
+        right: 15px;
+      }
+
+    }
+
+  </style>
+
+
+  <!-- =========================
+       GOOGLE STRUCTURED DATA
+  ========================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bilal Container & Prefab House",
+    "description": "Container Houses, Prefab Houses, Furnished Container Rooms, Guard Cabins, Prefab Rooms and Portable Bathrooms in Pakistan.",
+    "telephone": "+923020534276",
+    "url": "https://containerandprefabhouse-create.github.io/bilal-container-website/",
+    "logo": "https://containerandprefabhouse-create.github.io/bilal-container-website/logo.png",
+    "areaServed": "Pakistan"
   }
-
-}
-
-</script>
-
-
-<!-- WEBSITE SCHEMA -->
-
-<script type="application/ld+json">
-
-{
-  "@context": "https://schema.org",
-
-  "@type": "WebSite",
-
-  "name": "Bilal Container & Prefab House",
-
-  "url": "https://containerandprefabhouse-create.github.io/bilal-container-website/"
-}
-
-</script>
+  </script>
 
 </head>
 
@@ -118,1391 +778,1131 @@ content="https://containerandprefabhouse-create.github.io/bilal-container-websit
 <body>
 
 
-<!-- TOP BAR -->
+  <!-- TOP BAR -->
 
-<div class="top">
+  <div class="topbar">
+    🇵🇰 All Pakistan Delivery Available
+  </div>
 
-🇵🇰 All Pakistan Delivery | 📞 03020534276
 
-</div>
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
 
+  <header>
 
-<!-- HEADER -->
+    <div class="navbar">
 
-<header>
+      <a href="index.html" class="brand">
 
-<div class="logo">
+        <img
+          src="logo.png"
+          alt="Bilal Container & Prefab House Logo">
 
-<img
-src="logo.png"
-alt="Bilal Container & Prefab House Logo"
-class="company-logo">
+        <div class="brand-text">
 
-<div class="logo-text">
+          Bilal Container & Prefab House
 
-Bilal <span>Container</span>
+          <span>Container • Prefab • Cabin</span>
 
-</div>
+        </div>
 
-</div>
+      </a>
 
 
-<p>
+      <nav aria-label="Main Navigation">
 
-Container & Prefab House
+        <a href="index.html">Home</a>
 
-</p>
+        <a href="containers.html">Containers</a>
 
+        <a href="furnished.html">Furnished Rooms</a>
 
-<a href="tel:03020534276" class="btn call">
+        <a href="cabins.html">Guard Cabins</a>
 
-📞 Call Now
+        <a href="bathrooms.html">Bathrooms</a>
 
-</a>
+        <a href="rooms.html">Prefab Rooms</a>
 
+        <a href="houses.html">Prefab Houses</a>
 
-<a href="https://wa.me/923020534276" class="btn whatsapp">
+        <a href="contact.html">Contact</a>
 
-💬 WhatsApp
+      </nav>
 
-</a>
+    </div>
 
-</header>
+  </header>
 
 
-<!-- NAVIGATION -->
+  <!-- =========================
+       HERO
+  ========================== -->
 
-<nav aria-label="Main Navigation">
+  <section class="hero">
 
-<a href="index.html">Home</a>
+    <div class="hero-content">
 
-<a href="containers.html">Containers</a>
+      <div class="badge">
+        Quality Container & Prefab Solutions
+      </div>
 
-<a href="furnished.html">Furnished Rooms</a>
+      <h1>
+        Bilal Container &
+        <span>Prefab House</span>
+      </h1>
 
-<a href="cabins.html">Guard Cabins</a>
+      <p>
+        Container Houses, Prefab Houses,
+        Furnished Container Rooms, Guard Cabins,
+        Prefab Rooms and Portable Bathrooms
+        according to your requirements.
+      </p>
 
-<a href="bathrooms.html">Bathrooms</a>
+      <div class="buttons">
 
-<a href="rooms.html">Prefab Rooms</a>
+        <a
+          href="containers.html"
+          class="btn btn-primary">
 
-<a href="houses.html">Prefab Houses</a>
+          📦 View Containers
 
-<a href="contact.html">Contact</a>
+        </a>
 
-</nav>
 
+        <a
+          href="https://wa.me/923020534276"
+          target="_blank"
+          class="btn btn-whatsapp">
 
-<!-- HERO -->
+          💬 WhatsApp Now
 
-<section class="hero">
+        </a>
 
-<div>
+      </div>
 
-<h1>
+    </div>
 
-Container House & Prefab House Pakistan
+  </section>
 
-</h1>
 
+  <!-- =========================
+       PRODUCTS
+  ========================== -->
 
-<p>
+  <section class="section">
 
-Quality Container Houses, Prefab Houses,
-Furnished Container Rooms, Porta Cabins,
-Security Guard Cabins, Prefab Rooms and
-Portable Bathrooms.
+    <div class="section-title">
 
-</p>
+      <div class="small">
+        Our Products
+      </div>
 
+      <h2>
+        Container & Prefab Solutions
+      </h2>
 
-<br>
+      <p>
+        Choose the right container or prefab
+        solution for your home, office, site
+        or business.
+      </p>
 
+    </div>
 
-<a href="containers.html" class="btn call">
 
-📦 View Containers
+    <div class="grid">
 
-</a>
 
+      <!-- CONTAINER -->
 
-<a href="https://wa.me/923020534276" class="btn whatsapp">
+      <div class="card">
 
-💬 WhatsApp Now
+        <div class="card-img">
 
-</a>
+          <img
+            src="images/container-cover.jpg"
+            alt="Container House Pakistan"
+            loading="lazy">
 
+        </div>
 
-</div>
+        <div class="card-body">
 
-</section>
+          <h3>
+            📦 Containers
+          </h3>
 
+          <p>
+            Strong containers available in
+            different sizes for storage,
+            offices, rooms and other uses.
+          </p>
 
-<!-- PRODUCTS -->
+          <a
+            href="containers.html"
+            class="btn btn-primary">
 
-<section class="section">
+            View Containers
 
+          </a>
 
-<div class="title">
+        </div>
 
-<h2>
+      </div>
 
-Our Container & Prefab Products
 
-</h2>
+      <!-- FURNISHED ROOM -->
 
+      <div class="card">
 
-<p>
+        <div class="card-img">
 
-Choose the right container or prefab solution
-for your home, office, site or business.
+          <img
+            src="images/furnished-cover.jpg"
+            alt="Furnished Container Room Pakistan"
+            loading="lazy">
 
-</p>
+        </div>
 
-</div>
+        <div class="card-body">
 
+          <h3>
+            🏠 Furnished Container Rooms
+          </h3>
 
+          <p>
+            Ready-made furnished container
+            rooms for comfortable living,
+            offices and site accommodation.
+          </p>
 
-<div class="grid">
+          <a
+            href="furnished.html"
+            class="btn btn-primary">
 
+            View Furnished Rooms
 
-<!-- CONTAINERS -->
+          </a>
 
-<div class="card">
+        </div>
 
-<div class="card-img">
+      </div>
 
-<img
-src="images/container-cover.jpg"
-alt="Shipping containers and container houses in Pakistan"
-loading="lazy">
 
-</div>
+      <!-- CABIN -->
 
+      <div class="card">
 
-<div class="card-body">
+        <div class="card-img">
 
-<h3>
+          <img
+            src="images/cabin-cover.jpg"
+            alt="Security Guard Cabin Pakistan"
+            loading="lazy">
 
-📦 Containers
+        </div>
 
-</h3>
+        <div class="card-body">
 
+          <h3>
+            🛡️ Guard & Porta Cabins
+          </h3>
 
-<p>
+          <p>
+            Prefab security guard cabins
+            and portable cabins available
+            in different sizes and designs.
+          </p>
 
-Strong shipping containers available
-in different sizes for storage, offices,
-rooms and other uses.
+          <a
+            href="cabins.html"
+            class="btn btn-primary">
 
-</p>
+            View Cabins
 
+          </a>
 
-<a href="containers.html" class="btn call">
+        </div>
 
-View Containers
+      </div>
 
-</a>
 
-</div>
+      <!-- BATHROOM -->
 
-</div>
+      <div class="card">
 
+        <div class="card-img">
 
+          <img
+            src="images/bathroom-cover.jpg"
+            alt="Prefab Portable Bathroom Pakistan"
+            loading="lazy">
 
-<!-- FURNISHED ROOMS -->
+        </div>
 
-<div class="card">
+        <div class="card-body">
 
-<div class="card-img">
+          <h3>
+            🚿 Prefab Bathrooms
+          </h3>
 
-<img
-src="images/furnished-cover.jpg"
-alt="Furnished container room Pakistan"
-loading="lazy">
+          <p>
+            Ready-made prefab and portable
+            bathrooms for homes, offices,
+            sites and different projects.
+          </p>
 
-</div>
+          <a
+            href="bathrooms.html"
+            class="btn btn-primary">
 
+            View Bathrooms
 
-<div class="card-body">
+          </a>
 
-<h3>
+        </div>
 
-🏠 Furnished Container Rooms
+      </div>
 
-</h3>
 
+      <!-- PREFAB ROOM -->
 
-<p>
+      <div class="card">
 
-Ready-made furnished container rooms
-designed for comfortable living, offices
-and site accommodation.
+        <div class="card-img">
 
-</p>
+          <img
+            src="images/room-cover.jpg"
+            alt="Prefab Room Pakistan"
+            loading="lazy">
 
+        </div>
 
-<a href="furnished.html" class="btn call">
+        <div class="card-body">
 
-View Furnished Rooms
+          <h3>
+            🛏️ Prefab Rooms
+          </h3>
 
-</a>
+          <p>
+            Modern prefab rooms for homes,
+            offices, construction sites and
+            temporary accommodation.
+          </p>
 
-</div>
+          <a
+            href="rooms.html"
+            class="btn btn-primary">
 
-</div>
+            View Prefab Rooms
 
+          </a>
 
+        </div>
 
-<!-- GUARD CABINS -->
+      </div>
 
-<div class="card">
 
-<div class="card-img">
+      <!-- PREFAB HOUSE -->
 
-<img
-src="images/cabin-cover.jpg"
-alt="Prefab security guard cabin Pakistan"
-loading="lazy">
+      <div class="card">
 
-</div>
+        <div class="card-img">
 
+          <img
+            src="images/house-cover.jpg"
+            alt="Prefab House Pakistan"
+            loading="lazy">
 
-<div class="card-body">
+        </div>
 
-<h3>
+        <div class="card-body">
 
-🛡️ Guard & Porta Cabins
+          <h3>
+            🏡 Prefab Houses
+          </h3>
 
-</h3>
+          <p>
+            Custom prefab houses designed
+            according to your required size,
+            layout and requirements.
+          </p>
 
+          <a
+            href="houses.html"
+            class="btn btn-primary">
 
-<p>
+            View Prefab Houses
 
-Prefab security guard cabins and
-portable cabins available in different
-sizes and designs.
+          </a>
 
-</p>
+        </div>
 
+      </div>
 
-<a href="cabins.html" class="btn call">
 
-View Cabins
+    </div>
 
-</a>
+  </section>
 
-</div>
 
-</div>
+  <!-- =========================
+       ABOUT
+  ========================== -->
 
+  <section class="about">
 
+    <div class="section">
 
-<!-- BATHROOMS -->
+      <div class="section-title">
 
-<div class="card">
+        <div class="small">
+          About Us
+        </div>
 
-<div class="card-img">
+        <h2>
+          Bilal Container & Prefab House
+        </h2>
 
-<img
-src="images/bathroom-cover.jpg"
-alt="Prefab portable bathroom Pakistan"
-loading="lazy">
+      </div>
 
-</div>
 
+      <div class="about-box">
 
-<div class="card-body">
+        <p>
+          Bilal Container & Prefab House provides
+          container and prefab solutions for
+          customers across Pakistan.
+        </p>
 
-<h3>
+        <p>
+          We offer container houses, furnished
+          container rooms, prefab rooms, porta
+          cabins, security guard cabins, prefab
+          houses and portable bathrooms.
+        </p>
 
-🚿 Prefab & Portable Bathrooms
+        <p>
+          Products can be prepared in different
+          sizes and designs according to your
+          requirements.
+        </p>
 
-</h3>
+        <p>
+          🇵🇰 All Pakistan delivery is available.
+          Send your required size and design
+          through WhatsApp for more information.
+        </p>
 
+      </div>
 
-<p>
+    </div>
 
-Ready-made prefab bathrooms and
-portable toilet units in different
-sizes for homes, offices and sites.
+  </section>
 
-</p>
 
+  <!-- =========================
+       WHY CHOOSE US
+  ========================== -->
 
-<a href="bathrooms.html" class="btn call">
+  <section class="features-section">
 
-View Bathrooms
+    <div class="section">
 
-</a>
+      <div class="section-title">
 
-</div>
+        <div class="small">
+          Why Choose Us
+        </div>
 
-</div>
+        <h2>
+          Built According To Your Needs
+        </h2>
 
+        <p>
+          Professional container and prefab
+          solutions for different requirements.
+        </p>
 
+      </div>
 
-<!-- PREFAB ROOMS -->
 
-<div class="card">
+      <div class="grid">
 
-<div class="card-img">
 
-<img
-src="images/room-cover.jpg"
-alt="Prefab room Pakistan"
-loading="lazy">
+        <div class="feature">
 
-</div>
+          <div class="feature-icon">
+            🏗️
+          </div>
 
+          <h3>
+            Quality Work
+          </h3>
 
-<div class="card-body">
+          <p>
+            Strong and professional construction
+            according to requirements.
+          </p>
 
-<h3>
+        </div>
 
-🛏️ Prefab Rooms
 
-</h3>
+        <div class="feature">
 
+          <div class="feature-icon">
+            📐
+          </div>
 
-<p>
+          <h3>
+            Custom Sizes
+          </h3>
 
-Modern prefab rooms for homes,
-offices, construction sites and
-temporary accommodation.
+          <p>
+            Different sizes and designs can be
+            prepared according to your needs.
+          </p>
 
-</p>
+        </div>
 
 
-<a href="rooms.html" class="btn call">
+        <div class="feature">
 
-View Prefab Rooms
+          <div class="feature-icon">
+            🚚
+          </div>
 
-</a>
+          <h3>
+            All Pakistan Delivery
+          </h3>
 
-</div>
+          <p>
+            Delivery options are available
+            across Pakistan.
+          </p>
 
-</div>
+        </div>
 
 
+        <div class="feature">
 
-<!-- PREFAB HOUSES -->
+          <div class="feature-icon">
+            💬
+          </div>
 
-<div class="card">
+          <h3>
+            Direct WhatsApp
+          </h3>
 
-<div class="card-img">
+          <p>
+            Contact us directly for product
+            details, sizes and prices.
+          </p>
 
-<img
-src="images/house-cover.jpg"
-alt="Prefab house Pakistan"
-loading="lazy">
+        </div>
 
-</div>
 
+      </div>
 
-<div class="card-body">
+    </div>
 
-<h3>
+  </section>
 
-🏡 Prefab Houses
 
-</h3>
+  <!-- =========================
+       FAQ
+  ========================== -->
 
+  <section class="section">
 
-<p>
+    <div class="section-title">
 
-Custom prefab houses designed
-according to your required size,
-layout and requirements.
+      <div class="small">
+        FAQ
+      </div>
 
-</p>
+      <h2>
+        Frequently Asked Questions
+      </h2>
 
+    </div>
 
-<a href="houses.html" class="btn call">
 
-View Prefab Houses
+    <div class="faq">
 
-</a>
 
-</div>
+      <details>
 
-</div>
+        <summary>
+          Do you provide container houses in Pakistan?
+        </summary>
 
+        <p>
+          Yes. Container houses and container
+          rooms can be prepared according to
+          required size and design.
+        </p>
 
-</div>
+      </details>
 
-</section>
 
+      <details>
 
+        <summary>
+          Do you make prefab houses?
+        </summary>
 
-<!-- ABOUT -->
+        <p>
+          Yes. Custom prefab houses can be
+          prepared according to your required
+          layout and size.
+        </p>
 
-<section class="section">
+      </details>
 
 
-<div class="title">
+      <details>
 
-<h2>
+        <summary>
+          Do you provide guard cabins?
+        </summary>
 
-Container & Prefab Solutions in Pakistan
+        <p>
+          Yes. Prefab security guard cabins
+          and portable cabins are available
+          in different sizes.
+        </p>
 
-</h2>
+      </details>
 
-</div>
 
+      <details>
 
-<div class="content">
+        <summary>
+          Do you provide portable bathrooms?
+        </summary>
 
+        <p>
+          Yes. Prefab and portable bathrooms
+          are available in different sizes.
+        </p>
 
-<p>
+      </details>
 
-Bilal Container & Prefab House provides
-container and prefab solutions for customers
-across Pakistan. We offer container houses,
-furnished container rooms, prefab rooms,
-porta cabins, security guard cabins,
-prefab houses and portable bathrooms.
 
-</p>
+      <details>
 
+        <summary>
+          Do you deliver across Pakistan?
+        </summary>
 
-<br>
+        <p>
+          Yes 🇵🇰 All Pakistan delivery is
+          available. Contact us for details.
+        </p>
 
+      </details>
 
-<p>
 
-Our products can be made in different sizes
-according to your requirements. Whether you need
-a container room, office cabin, security cabin,
-prefab house or portable bathroom, you can
-contact us for available designs, sizes and prices.
+    </div>
 
-</p>
+  </section>
 
 
-<br>
+  <!-- =========================
+       CTA
+  ========================== -->
 
+  <div class="cta">
 
-<p>
+    <h2>
+      Need a Container or Prefab Unit?
+    </h2>
 
-🇵🇰 All Pakistan delivery is available.
-Send your required size and design through
-WhatsApp for more information.
+    <p>
+      Send us your required size, design
+      or product requirement and contact
+      us directly for details.
+    </p>
 
-</p>
+    <div class="phone">
+      📞 03020534276
+    </div>
 
+    <div class="buttons"
+         style="justify-content:center;">
 
-</div>
+      <a
+        href="tel:03020534276"
+        class="btn btn-dark">
 
-</section>
+        📞 Call Now
 
+      </a>
 
+      <a
+        href="https://wa.me/923020534276"
+        target="_blank"
+        class="btn btn-whatsapp">
 
-<!-- WHY CHOOSE US -->
+        💬 WhatsApp Now
 
-<section class="features">
+      </a>
 
-<div class="section">
+    </div>
 
+  </div>
 
-<div class="title">
 
-<h2>
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
-Why Choose Bilal Container?
+  <footer>
 
-</h2>
+    <img
+      src="logo.png"
+      alt="Bilal Container & Prefab House Logo"
+      class="footer-logo">
 
+    <h3>
+      Bilal Container & Prefab House
+    </h3>
 
-<p>
+    <p>
+      Owner: Khalil
+    </p>
 
-Reliable container and prefab solutions
-for different requirements.
+    <p>
+      📞 03020534276
+    </p>
 
-</p>
+    <p>
+      🇵🇰 All Pakistan Delivery Available
+    </p>
 
-</div>
+    <p>
+      Container House • Prefab House •
+      Prefab Room • Guard Cabin •
+      Portable Bathroom
+    </p>
 
+    <div class="copyright">
 
+      <p>
+        © 2026 Bilal Container & Prefab House.
+        All Rights Reserved.
+      </p>
 
-<div class="grid">
+    </div>
 
+  </footer>
 
-<div class="feature">
 
-<div class="icon">
+  <!-- =========================
+       FLOATING WHATSAPP
+  ========================== -->
 
-🏗️
+  <a
+    href="https://wa.me/923020534276"
+    target="_blank"
+    class="whatsapp-float"
+    aria-label="Contact Bilal Container on WhatsApp">
 
-</div>
+    💬
 
+  </a>
 
-<h3>
 
-Quality Work
+  <!-- =========================
+       CHATBOT BUTTON
+  ========================== -->
 
-</h3>
+  <button
+    class="chat-button"
+    id="chatbotBtn"
+    aria-label="Open Chatbot">
 
+    🤖
 
-<p>
+  </button>
 
-Strong and professional construction
-according to requirements.
 
-</p>
+  <!-- =========================
+       CHATBOT
+  ========================== -->
 
-</div>
+  <div
+    class="chat-box"
+    id="chatbotBox">
 
 
+    <div class="chat-header">
 
-<div class="feature">
+      <div>
 
-<div class="icon">
+        <strong>
+          Bilal Container Assistant
+        </strong>
 
-📐
+        <br>
 
-</div>
+        <small>
+          Online • Ready to help
+        </small>
 
+      </div>
 
-<h3>
+      <span
+        class="close-chat"
+        id="closeChat">
 
-Custom Sizes
+        ✖
 
-</h3>
+      </span>
 
+    </div>
 
-<p>
 
-Different sizes and designs can be
-prepared according to your needs.
+    <div
+      class="chat-messages"
+      id="chatMessages">
 
-</p>
 
-</div>
+      <div class="bot-message">
 
+        Assalamualaikum 👋<br><br>
 
+        Welcome to Bilal Container &
+        Prefab House. Aap ko kis product
+        ki information chahiye?
 
-<div class="feature">
+      </div>
 
-<div class="icon">
 
-🚚
+      <div class="chat-options">
 
-</div>
+        <button onclick="quickReply('container')">
+          📦 Container
+        </button>
 
+        <button onclick="quickReply('room')">
+          🏠 Room
+        </button>
 
-<h3>
+        <button onclick="quickReply('cabin')">
+          🛡️ Cabin
+        </button>
 
-All Pakistan Delivery
+        <button onclick="quickReply('bathroom')">
+          🚿 Bathroom
+        </button>
 
-</h3>
+        <button onclick="quickReply('house')">
+          🏡 House
+        </button>
 
+        <button onclick="quickReply('price')">
+          💰 Price
+        </button>
 
-<p>
+        <button onclick="quickReply('contact')">
+          📞 Contact
+        </button>
 
-Delivery available across Pakistan.
+      </div>
 
-</p>
+    </div>
 
-</div>
 
+    <div class="chat-input">
 
+      <input
+        type="text"
+        id="userMessage"
+        placeholder="Type your message...">
 
-<div class="feature">
+      <button id="sendMessage">
+        Send
+      </button>
 
-<div class="icon">
+    </div>
 
-💬
+  </div>
 
-</div>
 
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
 
-<h3>
+  <script>
 
-Direct WhatsApp
+    const chatbotBtn =
+      document.getElementById("chatbotBtn");
 
-</h3>
+    const chatbotBox =
+      document.getElementById("chatbotBox");
 
+    const closeChat =
+      document.getElementById("closeChat");
 
-<p>
+    const sendMessage =
+      document.getElementById("sendMessage");
 
-Easily contact us for prices,
-sizes and product details.
+    const userMessage =
+      document.getElementById("userMessage");
 
-</p>
+    const chatMessages =
+      document.getElementById("chatMessages");
 
-</div>
 
+    chatbotBtn.addEventListener(
+      "click",
+      function () {
 
-</div>
+        chatbotBox.classList.toggle("active");
 
-</div>
+      }
+    );
 
-</section>
 
+    closeChat.addEventListener(
+      "click",
+      function () {
 
+        chatbotBox.classList.remove("active");
 
-<!-- FAQ -->
+      }
+    );
 
-<section class="section">
 
+    function addMessage(message, type) {
 
-<div class="title">
+      const div =
+        document.createElement("div");
 
-<h2>
+      div.className =
+        type === "user"
+        ? "user-message"
+        : "bot-message";
 
-Frequently Asked Questions
+      div.textContent = message;
 
-</h2>
+      chatMessages.appendChild(div);
 
-</div>
+      chatMessages.scrollTop =
+        chatMessages.scrollHeight;
 
+    }
 
 
-<div class="content">
+    function getBotReply(message) {
 
+      const text =
+        message.toLowerCase();
 
-<h3>
 
-Do you provide container houses in Pakistan?
+      if (
+        text.includes("hello") ||
+        text.includes("hi") ||
+        text.includes("salam") ||
+        text.includes("assalam")
+      ) {
 
-</h3>
+        return "Wa Alaikum Assalam 👋 Bilal Container & Prefab House mein khush aamdeed. Aap kis product ki information chahte hain?";
 
+      }
 
-<p>
 
-Yes. We provide container houses and
-container rooms according to required
-size and design.
+      if (
+        text.includes("price") ||
+        text.includes("rate") ||
+        text.includes("qeemat") ||
+        text.includes("cost")
+      ) {
 
-</p>
+        return "Ji, price product ke size aur design ke mutabiq hoti hai. Aap required product aur size bata dein.";
 
+      }
 
-<br>
 
+      if (
+        text.includes("container")
+      ) {
 
-<h3>
+        return "Ji, Containers aur Container Houses available hain. Aap required size bata dein, jaise 8×20, 10×20, 10×30 ya 10×40.";
 
-Do you make prefab houses?
+      }
 
-</h3>
 
+      if (
+        text.includes("room")
+      ) {
 
-<p>
+        return "Ji, Prefab Rooms aur Furnished Container Rooms available hain. Aap required size bata dein.";
 
-Yes. Custom prefab houses can be prepared
-according to your required layout and size.
+      }
 
-</p>
 
+      if (
+        text.includes("bathroom") ||
+        text.includes("toilet")
+      ) {
 
-<br>
+        return "Ji, Prefab aur Portable Bathrooms available hain. Aap required size bata dein.";
 
+      }
 
-<h3>
 
-Do you provide porta cabins and guard cabins?
+      if (
+        text.includes("cabin") ||
+        text.includes("guard")
+      ) {
 
-</h3>
+        return "Ji, Security Guard Cabins aur Porta Cabins available hain. Aap required size bata dein.";
 
+      }
 
-<p>
 
-Yes. Prefab porta cabins and security
-guard cabins are available in different sizes.
+      if (
+        text.includes("house") ||
+        text.includes("ghar")
+      ) {
 
-</p>
+        return "Ji, Custom Prefab Houses required size aur layout ke mutabiq tayar kiye ja sakte hain.";
 
+      }
 
-<br>
 
+      if (
+        text.includes("delivery") ||
+        text.includes("deliver")
+      ) {
 
-<h3>
+        return "Ji haan 🇵🇰 All Pakistan Delivery Available hai.";
 
-Do you provide portable bathrooms?
+      }
 
-</h3>
 
+      if (
+        text.includes("contact") ||
+        text.includes("number") ||
+        text.includes("phone") ||
+        text.includes("whatsapp")
+      ) {
 
-<p>
+        return "Ji, Call ya WhatsApp ke liye 03020534276 par rabta karein.";
 
-Yes. Prefab and portable bathrooms are
-available in different sizes.
+      }
 
-</p>
 
+      return "Ji, apni requirement aur size bata dein. Price aur details ke liye 03020534276 par WhatsApp karein.";
 
-<br>
+    }
 
 
-<h3>
+    function sendChat() {
 
-Do you deliver across Pakistan?
+      const message =
+        userMessage.value.trim();
 
-</h3>
 
+      if (message === "") {
+        return;
+      }
 
-<p>
 
-Yes 🇵🇰 All Pakistan delivery is available.
-Contact us for delivery details.
+      addMessage(message, "user");
 
-</p>
+      userMessage.value = "";
 
 
-</div>
+      setTimeout(
+        function () {
 
-</section>
+          const reply =
+            getBotReply(message);
 
+          addMessage(reply, "bot");
 
+        },
+        500
+      );
 
-<!-- CONTACT -->
+    }
 
-<section class="section">
 
+    sendMessage.addEventListener(
+      "click",
+      sendChat
+    );
 
-<div class="contact">
 
+    userMessage.addEventListener(
+      "keydown",
+      function (event) {
 
-<h2>
+        if (event.key === "Enter") {
+          sendChat();
+        }
 
-Need a Container or Prefab Unit?
+      }
+    );
 
-</h2>
 
+    function quickReply(type) {
 
-<p>
+      let message = "";
 
-Send your required size and design
-on WhatsApp for details and price.
 
-</p>
+      if (type === "container") {
+        message = "I need a container";
+      }
 
+      if (type === "room") {
+        message = "I need a prefab room";
+      }
 
-<div class="phone">
+      if (type === "cabin") {
+        message = "I need a guard cabin";
+      }
 
-📞 03020534276
+      if (type === "bathroom") {
+        message = "I need a prefab bathroom";
+      }
 
-</div>
+      if (type === "house") {
+        message = "I need a prefab house";
+      }
 
+      if (type === "price") {
+        message = "I want price details";
+      }
 
-<a href="tel:03020534276" class="btn call">
+      if (type === "contact") {
+        message = "I want WhatsApp contact";
+      }
 
-Call Now
 
-</a>
+      addMessage(message, "user");
 
 
-<a href="https://wa.me/923020534276"
-class="btn whatsapp">
+      setTimeout(
+        function () {
 
-WhatsApp Now
+          const reply =
+            getBotReply(message);
 
-</a>
+          addMessage(reply, "bot");
 
+        },
+        500
+      );
 
-</div>
+    }
 
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer>
-
-
-<img
-src="logo.png"
-alt="Bilal Container Logo"
-class="footer-logo">
-
-
-<h3>
-
-Bilal Container & Prefab House
-
-</h3>
-
-
-<p>
-
-Owner: Khalil
-
-</p>
-
-
-<p>
-
-📞 03020534276
-
-</p>
-
-
-<p>
-
-🇵🇰 All Pakistan Delivery Available
-
-</p>
-
-
-<p>
-
-Container House | Prefab House |
-Prefab Room | Porta Cabin |
-Guard Cabin | Portable Bathroom
-
-</p>
-
-
-<p>
-
-© 2026 Bilal Container & Prefab House.
-All Rights Reserved.
-
-</p>
-
-
-</footer>
-
-
-
-<!-- FLOATING WHATSAPP -->
-
-<a href="https://wa.me/923020534276"
-class="float"
-aria-label="Contact Bilal Container on WhatsApp">
-
-💬
-
-</a>
-
-
-
-<!-- CHATBOT BUTTON -->
-
-<div class="chatbot-btn" id="chatbotBtn">
-
-🤖
-
-</div>
-
-
-
-<!-- CHATBOT -->
-
-<div class="chatbot-box" id="chatbotBox">
-
-
-<div class="chatbot-header">
-
-
-<div>
-
-<strong>
-
-Bilal Container Assistant
-
-</strong>
-
-
-<br>
-
-
-<small>
-
-Online
-
-</small>
-
-</div>
-
-
-<span id="closeChat">
-
-✖
-
-</span>
-
-
-</div>
-
-
-
-<div class="chatbot-messages" id="chatMessages">
-
-
-<div class="bot-message">
-
-Assalamualaikum 👋 Welcome to Bilal Container
-& Prefab House. Aap ko kis product ki
-information chahiye?
-
-</div>
-
-
-
-<div class="chat-options">
-
-
-<button onclick="quickReply('container')">
-
-📦 Container
-
-</button>
-
-
-<button onclick="quickReply('furnished')">
-
-🏠 Furnished Room
-
-</button>
-
-
-<button onclick="quickReply('bathroom')">
-
-🚿 Bathroom
-
-</button>
-
-
-<button onclick="quickReply('cabin')">
-
-🏕️ Cabin
-
-</button>
-
-
-<button onclick="quickReply('house')">
-
-🏡 Prefab House
-
-</button>
-
-
-<button onclick="quickReply('price')">
-
-💰 Price
-
-</button>
-
-
-<button onclick="quickReply('contact')">
-
-📞 Contact / WhatsApp
-
-</button>
-
-
-</div>
-
-</div>
-
-
-
-<div class="chatbot-input">
-
-
-<input
-type="text"
-id="userMessage"
-placeholder="Type your message...">
-
-
-<button id="sendMessage">
-
-Send
-
-</button>
-
-
-</div>
-
-
-</div>
-
-
-
-<!-- JAVASCRIPT -->
-
-<script>
-
-
-const chatbotBtn =
-document.getElementById("chatbotBtn");
-
-
-const chatbotBox =
-document.getElementById("chatbotBox");
-
-
-const closeChat =
-document.getElementById("closeChat");
-
-
-const sendMessage =
-document.getElementById("sendMessage");
-
-
-const userMessage =
-document.getElementById("userMessage");
-
-
-const chatMessages =
-document.getElementById("chatMessages");
-
-
-
-chatbotBtn.addEventListener(
-"click",
-function(){
-
-chatbotBox.classList.add("active");
-
-}
-);
-
-
-
-closeChat.addEventListener(
-"click",
-function(){
-
-chatbotBox.classList.remove("active");
-
-}
-);
-
-
-
-function addMessage(message, type){
-
-const div =
-document.createElement("div");
-
-
-div.className =
-type === "user"
-? "user-message"
-: "bot-message";
-
-
-div.textContent = message;
-
-
-chatMessages.appendChild(div);
-
-
-chatMessages.scrollTop =
-chatMessages.scrollHeight;
-
-}
-
-
-
-function getBotReply(message){
-
-
-const text =
-message.toLowerCase();
-
-
-
-if(
-
-text.includes("hello") ||
-text.includes("hi") ||
-text.includes("salam") ||
-text.includes("assalam")
-
-){
-
-return "Wa Alaikum Assalam 👋 Bilal Container & Prefab House mein khush aamdeed. Aap ko kis product ki information chahiye?";
-
-}
-
-
-
-if(
-
-text.includes("price") ||
-text.includes("rate") ||
-text.includes("qeemat")
-
-){
-
-return "Ji, containers, furnished rooms, prefab bathrooms, cabins aur prefab houses available hain. Aap required size bata dein.";
-
-}
-
-
-
-if(
-
-text.includes("10x20") ||
-text.includes("10 x 20")
-
-){
-
-return "10 × 20 Furnished Container Room ki price Rs. 720,000 hai. Complete details ke liye WhatsApp par rabta karein.";
-
-}
-
-
-
-if(
-
-text.includes("8x20") ||
-text.includes("8 x 20")
-
-){
-
-return "8 × 20 Furnished Container Room ki price Rs. 600,000 hai. Complete details ke liye WhatsApp karein.";
-
-}
-
-
-
-if(
-
-text.includes("bathroom") ||
-text.includes("toilet")
-
-){
-
-return "Prefab Bathrooms available hain. Size aur requirements WhatsApp par bhej dein, price aur details ke liye.";
-
-}
-
-
-
-if(
-
-text.includes("delivery") ||
-text.includes("deliver")
-
-){
-
-return "Ji haan 🇵🇰 All Pakistan Delivery Available hai.";
-
-}
-
-
-
-if(
-
-text.includes("whatsapp") ||
-text.includes("contact") ||
-text.includes("number") ||
-text.includes("phone")
-
-){
-
-return "Ji, WhatsApp ya Call ke liye 03020534276 par rabta karein.";
-
-}
-
-
-
-if(
-
-text.includes("container")
-
-){
-
-return "Ji, Containers aur Furnished Container Rooms available hain. Aap required size bata dein, jaise 8×20, 10×20, 10×30 ya 10×40.";
-
-}
-
-
-
-if(
-
-text.includes("cabin")
-
-){
-
-return "Ji, Guard Cabins aur Porta Cabins available hain. Aap apna required size bata dein.";
-
-}
-
-
-
-if(
-
-text.includes("room")
-
-){
-
-return "Ji, Prefab Rooms aur Furnished Container Rooms available hain. Aap required size bata dein.";
-
-}
-
-
-
-if(
-
-text.includes("house")
-
-){
-
-return "Ji, Prefab Houses custom design aur required size ke mutabiq tayar kiye ja sakte hain. Apni requirements WhatsApp par bhej dein.";
-
-}
-
-
-
-return "Ji, apni requirement ya size bata dein. Agar aap chahein to 03020534276 par WhatsApp karein.";
-
-}
-
-
-
-function sendChat(){
-
-
-const message =
-userMessage.value.trim();
-
-
-
-if(message === ""){
-
-return;
-
-}
-
-
-
-addMessage(message, "user");
-
-
-userMessage.value = "";
-
-
-
-setTimeout(
-function(){
-
-
-const reply =
-getBotReply(message);
-
-
-addMessage(reply, "bot");
-
-
-},
-500
-);
-
-
-}
-
-
-
-sendMessage.addEventListener(
-"click",
-sendChat
-);
-
-
-
-userMessage.addEventListener(
-"keydown",
-function(event){
-
-if(event.key === "Enter"){
-
-sendChat();
-
-}
-
-}
-);
-
-
-
-function quickReply(type){
-
-
-let message = "";
-
-
-if(type === "container"){
-
-message = "I need a container";
-
-}
-
-
-if(type === "furnished"){
-
-message = "I need a furnished room";
-
-}
-
-
-if(type === "bathroom"){
-
-message = "I need a prefab bathroom";
-
-}
-
-
-if(type === "cabin"){
-
-message = "I need a porta cabin";
-
-}
-
-
-if(type === "house"){
-
-message = "I need a prefab house";
-
-}
-
-
-if(type === "price"){
-
-message = "I want price details";
-
-}
-
-
-if(type === "contact"){
-
-message = "I want WhatsApp contact";
-
-}
-
-
-
-addMessage(message, "user");
-
-
-
-setTimeout(
-function(){
-
-
-const reply =
-getBotReply(message);
-
-
-addMessage(reply, "bot");
-
-
-},
-500
-);
-
-
-}
-
-
-</script>
+  </script>
 
 
 </body>
